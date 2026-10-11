@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Student Registration - College Placement Portal">
+
+<title>Student Registration | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Registration CSS -->
+
+<link rel="stylesheet"
+    href="css/register.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     REGISTRATION PAGE
+========================================== -->
+
+<main class="register-page">
+
+
+    <!-- =====================================
+         TOP HEADER
+    ====================================== -->
+
+    <header class="register-header">
+
+        <div class="container register-header-inner">
+
+
+            <!-- Logo -->
+
+            <a href="index.html"
+                class="logo">
+
+                <div class="logo-icon">
+                    CP
+                </div>
+
+                <div class="logo-text">
+
+                    <span>
+                        College
+                    </span>
+
+                    Placement
+
+                </div>
+
+            </a>
+
+
+            <!-- Login Link -->
+
+            <div class="already-account">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <section class="register-section">
+
+
+        <div class="register-container">
+
+
+            <!-- Page Heading -->
+
+            <div class="register-heading">
+
+                <span class="section-label">
+                    STUDENT PORTAL
+                </span>
+
+                <h1>
+                    Create Your Student Profile
+                </h1>
+
+                <p>
+                    Enter your details to create your
+                    college placement profile.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PROGRESS
+            ================================== -->
+
+            <div class="registration-progress">
+
+
+                <div class="progress-step active">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <span>
+                        Personal
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <span>
+                        Academic
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <span>
+                        Skills
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <span>
+                        Account
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 REGISTRATION FORM
+            ================================== -->
+
+            <form
+                class="registration-form"
+                id="registrationForm">
+
+
+                <!-- =================================
+                     PERSONAL DETAILS
+                ================================== -->
+
+                <div class="form-section">
+
+
+                    <div class="form-section-heading">
+
+                        <div class="section-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Personal Information
+                            </h2>
+
+                            <p>
+                                Tell us about yourself.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- Full Name -->
+
+                        <div class="form-group full-width">
+
+                            <label for="fullName">
+                                Full Name
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                required>
+
+                        </div>
+
+
+                        <!-- Register Number -->
+
+                        <div class="form-group">
+
+                            <label for="registerNumber">
+                                Register Number
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerNumber"
+                                name="registerNumber"
+                                placeholder="Eg: 23CS101"
+                                required>
+
+                        </div>
+
+
+                        <!-- College Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                College Email
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="yourname@college.edu"
+                                required>
+
+                        </div>
+
+
+                        <!-- Phone -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                required>
+
+                        </div>
+
+
+                        <!-- Date of Birth -->
+
+                        <div class="form-group">
+
+                            <label for="dob">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob">
+
+                        </div>
+
+
+                        <!-- Gender -->
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender">
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="male">
+                                    Male
+                                </option>
+
+                                <option value="female">
+                                    Female
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ACADEMIC DETAILS
+                ================================== -->
+
+                <div class="form-section">
+
+
+                    <div class="form-section-heading">
+
+                        <div class="section-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Academic Information
+                            </h2>
+
+                            <p>
+                                Add your current academic details.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- Department -->
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                Department
+                                <span>*</span>
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required>
+
+                                <option value="">
+                                    Select department
+                                </option>
+
+                                <option value="cse">
+                                    Computer Science & Engineering
+                                </option>
+
+                                <option value="it">
+                                    Information Technology
+                                </option>
+
+                                <option value="ece">
+                                    Electronics & Communication Engineering
+                                </option>
+
+                                <option value="eee">
+                                    Electrical & Electronics Engineering
+                                </option>
+
+                                <option value="mech">
+                                    Mechanical Engineering
+                                </option>
+
+                                <option value="civil">
+                                    Civil Engineering
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Year -->
+
+                        <div class="form-group">
+
+                            <label for="year">
+                                Current Year
+                                <span>*</span>
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1">
+                                    First Year
+                                </option>
+
+                                <option value="2">
+                                    Second Year
+                                </option>
+
+                                <option value="3">
+                                    Third Year
+                                </option>
+
+                                <option value="4">
+                                    Final Year
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Section -->
+
+                        <div class="form-group">
+
+                            <label for="section">
+                                Section
+                            </label>
+
+                            <select
+                                id="section"
+                                name="section">
+
+                                <option value="">
+                                    Select section
+                                </option>
+
+                                <option value="a">
+                                    Section A
+                                </option>
+
+                                <option value="b">
+                                    Section B
+                                </option>
+
+                                <option value="c">
+                                    Section C
+                                </option>
+
+                                <option value="d">
+                                    Section D
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- CGPA -->
+
+                        <div class="form-group">
+
+                            <label for="cgpa">
+                                Current CGPA
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="cgpa"
+                                name="cgpa"
+                                min="0"
+                                max="10"
+                                step="0.01"
+                                placeholder="Eg: 8.25"
+                                required>
+
+                        </div>
+
+
+                        <!-- 10th -->
+
+                        <div class="form-group">
+
+                            <label for="tenth">
+                                10th Percentage
+                            </label>
+
+                            <input
+                                type="number"
+                                id="tenth"
+                                name="tenth"
+                                min="0"
+                                max="100"
+                                step="0.01"
+                                placeholder="Eg: 92.5">
+
+                        </div>
+
+
+                        <!-- 12th -->
+
+                        <div class="form-group">
+
+                            <label for="twelfth">
+                                12th Percentage
+                            </label>
+
+                            <input
+                                type="number"
+                                id="twelfth"
+                                name="twelfth"
+                                min="0"
+                                max="100"
+                                step="0.01"
+                                placeholder="Eg: 88.5">
+
+                        </div>
+
+
+                        <!-- Backlogs -->
+
+                        <div class="form-group">
+
+                            <label for="backlogs">
+                                Active Backlogs
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="backlogs"
+                                name="backlogs"
+                                min="0"
+                                max="20"
+                                placeholder="Eg: 0"
+                                required>
+
+                        </div>
+
+
+                        <!-- Graduation -->
+
+                        <div class="form-group">
+
+                            <label for="graduationYear">
+                                Graduation Year
+                                <span>*</span>
+                            </label>
+
+                            <select
+                                id="graduationYear"
+                                name="graduationYear"
+                                required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="2027">
+                                    2027
+                                </option>
+
+                                <option value="2028">
+                                    2028
+                                </option>
+
+                                <option value="2029">
+                                    2029
+                                </option>
+
+                                <option value="2030">
+                                    2030
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     SKILLS
+                ================================== -->
+
+                <div class="form-section">
+
+
+                    <div class="form-section-heading">
+
+                        <div class="section-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Skills & Career
+                            </h2>
+
+                            <p>
+                                Add your technical and professional skills.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- Programming -->
+
+                        <div class="form-group full-width">
+
+                            <label for="programmingSkills">
+                                Programming Skills
+                            </label>
+
+                            <input
+                                type="text"
+                                id="programmingSkills"
+                                name="programmingSkills"
+                                placeholder="Eg: C, C++, Java, Python">
+
+                            <small>
+                                Separate multiple skills with commas.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Technical -->
+
+                        <div class="form-group full-width">
+
+                            <label for="technicalSkills">
+                                Technical Skills
+                            </label>
+
+                            <input
+                                type="text"
+                                id="technicalSkills"
+                                name="technicalSkills"
+                                placeholder="Eg: HTML, CSS, SQL, Git">
+
+                        </div>
+
+
+                        <!-- Preferred Role -->
+
+                        <div class="form-group">
+
+                            <label for="preferredRole">
+                                Preferred Job Role
+                            </label>
+
+                            <select
+                                id="preferredRole"
+                                name="preferredRole">
+
+                                <option value="">
+                                    Select preferred role
+                                </option>
+
+                                <option value="software">
+                                    Software Developer
+                                </option>
+
+                                <option value="data">
+                                    Data Analyst
+                                </option>
+
+                                <option value="web">
+                                    Web Developer
+                                </option>
+
+                                <option value="mobile">
+                                    Mobile App Developer
+                                </option>
+
+                                <option value="testing">
+                                    Software Testing
+                                </option>
+
+                                <option value="network">
+                                    Networking
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Languages -->
+
+                        <div class="form-group">
+
+                            <label for="languages">
+                                Languages Known
+                            </label>
+
+                            <input
+                                type="text"
+                                id="languages"
+                                name="languages"
+                                placeholder="Eg: Tamil, English">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ACCOUNT
+                ================================== -->
+
+                <div class="form-section">
+
+
+                    <div class="form-section-heading">
+
+                        <div class="section-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Create Account
+                            </h2>
+
+                            <p>
+                                Set a secure password for your portal.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- Password -->
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                minlength="6"
+                                required>
+
+                        </div>
+
+
+                        <!-- Confirm Password -->
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                minlength="6"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required>
+
+                        <span>
+                            I confirm that the information provided
+                            is accurate and belongs to me.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- =================================
+                     FORM ACTIONS
+                ================================== -->
+
+                <div class="form-actions">
+
+                    <a
+                        href="login.html"
+                        class="cancel-btn">
+
+                        Cancel
+
+                    </a>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+
+                        Create Student Account
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================================
+     TEMPORARY REGISTRATION JAVASCRIPT
+========================================== -->
+
+<script>
+const registrationForm =
+    document.getElementById("registrationForm");
+
+registrationForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    // Get password values
+    const password =
+        document.getElementById("password").value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    // Check password match
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+    }
+
+    // Get terms checkbox
+    const terms =
+        document.getElementById("terms");
+
+    if (!terms.checked) {
+        alert("Please accept the terms and conditions.");
+        return;
+    }
+
+    // Collect form values
+    const userData = {
+
+        role: "student",
+
+        name:
+            document.getElementById("fullName").value.trim(),
+
+        registerNumber:
+            document.getElementById("registerNumber").value.trim(),
+
+        email:
+            document.getElementById("email").value.trim(),
+
+        phone:
+            document.getElementById("phone").value.trim(),
+
+        dateOfBirth:
+            document.getElementById("dob").value,
+
+        gender:
+            document.getElementById("gender").value,
+
+        department:
+            document.getElementById("department").value,
+
+        year:
+            document.getElementById("year").value,
+
+        section:
+            document.getElementById("section").value,
+
+        cgpa:
+            document.getElementById("cgpa").value,
+
+        tenthPercentage:
+            document.getElementById("tenth").value,
+
+        twelfthPercentage:
+            document.getElementById("twelfth").value,
+
+        activeBacklogs:
+            document.getElementById("backlogs").value,
+
+        graduationYear:
+            document.getElementById("graduationYear").value,
+
+        programmingSkills:
+            document.getElementById("programmingSkills").value.trim(),
+
+        technicalSkills:
+            document.getElementById("technicalSkills").value.trim(),
+
+        preferredRole:
+            document.getElementById("preferredRole").value,
+
+        languages:
+            document.getElementById("languages").value.trim(),
+
+        password: password
+    };
+
+    try {
+
+        // Send registration data to backend
+        const response = await fetch(
+            "http://localhost:5000/api/users/register",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(userData)
+            }
+        );
+
+        const result = await response.json();
+
+        // Successful registration
+        if (response.ok && result.success) {
+
+            alert(
+                "Registration successful!\n\n" +
+                "Your student account has been created."
+            );
+
+            // Clear form
+            registrationForm.reset();
+
+            // Go to login page
+            window.location.href = "login.html";
+
+        } else {
+
+            alert(
+                result.message ||
+                "Registration failed. Please try again."
+            );
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Registration Error:",
+            error
+        );
+
+        alert(
+            "Unable to connect to the server.\n\n" +
+            "Please make sure the backend server is running."
+        );
+    }
+
+});
+</script>
+
+</body>
+
+</html>

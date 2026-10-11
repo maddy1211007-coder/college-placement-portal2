@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Student Dashboard - College Placement Portal">
+
+<title>Student Dashboard | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Dashboard CSS -->
+
+<link rel="stylesheet"
+    href="css/student-dashboard.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     DASHBOARD LAYOUT
+========================================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <a href="index.html"
+                class="logo">
+
+                <div class="logo-icon">
+                    CP
+                </div>
+
+                <div class="logo-text">
+
+                    <span>
+                        College
+                    </span>
+
+                    Placement
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN MENU
+                </span>
+
+
+                <a href="student-dashboard.html"
+                    class="sidebar-link active">
+
+                    <span class="sidebar-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="student-profile.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        👤
+                    </span>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+                <a href="placement-drives.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🏢
+                    </span>
+
+                    <span>
+                        Placement Drives
+                    </span>
+
+                </a>
+
+
+                <a href="my-applications.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        📋
+                    </span>
+
+                    <span>
+                        My Applications
+                    </span>
+
+                </a>
+
+
+                <a href="aptitude-tests.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🧠
+                    </span>
+
+                    <span>
+                        Aptitude Tests
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ACCOUNT
+                </span>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🔔
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+
+            <div class="sidebar-help">
+
+                <span class="help-icon">
+                    ?
+                </span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <span>
+                        Contact Placement Cell
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="login.html"
+                class="logout-link">
+
+                <span>
+                    ↪
+                </span>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =================================
+             TOPBAR
+        ================================== -->
+
+        <header class="dashboard-topbar">
+
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search placement drives...">
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+
+                <!-- Notification -->
+
+                <button class="notification-btn">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- Student -->
+
+                <div class="student-mini-profile">
+
+                    <div class="student-avatar">
+                        MS
+                    </div>
+
+                    <div class="student-mini-info">
+
+                        <strong>
+                            Student Name
+                        </strong>
+
+                        <span>
+                            CSE · Final Year
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             CONTENT
+        ================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- Welcome -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="welcome-label">
+                        STUDENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Good Morning, Student 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your
+                        placement journey today.
+                    </p>
+
+                </div>
+
+
+                <a href="#"
+                    class="complete-profile-btn">
+
+                    Complete Profile
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STAT CARDS
+            ================================== -->
+
+            <div class="dashboard-stats">
+
+
+                <!-- Profile -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="dashboard-stat-icon blue">
+                            👤
+                        </div>
+
+                        <span class="stat-status">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-stat-label">
+                        Profile Completion
+                    </span>
+
+                    <div class="stat-value-row">
+
+                        <strong>
+                            80%
+                        </strong>
+
+                        <span>
+                            20% remaining
+                        </span>
+
+                    </div>
+
+                    <div class="small-progress">
+
+                        <div
+                            class="small-progress-fill"
+                            style="width: 80%;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Drives -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="dashboard-stat-icon cyan">
+                            🏢
+                        </div>
+
+                        <span class="stat-status green">
+                            Available
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-stat-label">
+                        Eligible Drives
+                    </span>
+
+                    <div class="stat-value-row">
+
+                        <strong>
+                            08
+                        </strong>
+
+                        <span>
+                            this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Applications -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="dashboard-stat-icon purple">
+                            📋
+                        </div>
+
+                        <span class="stat-status">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-stat-label">
+                        My Applications
+                    </span>
+
+                    <div class="stat-value-row">
+
+                        <strong>
+                            05
+                        </strong>
+
+                        <span>
+                            applications
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tests -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="dashboard-stat-icon orange">
+                            🧠
+                        </div>
+
+                        <span class="stat-status orange-text">
+                            02 Pending
+                        </span>
+
+                    </div>
+
+                    <span class="dashboard-stat-label">
+                        Aptitude Tests
+                    </span>
+
+                    <div class="stat-value-row">
+
+                        <strong>
+                            04
+                        </strong>
+
+                        <span>
+                            completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MAIN GRID
+            ================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- =================================
+                     UPCOMING DRIVES
+                ================================== -->
+
+                <section class="dashboard-panel drives-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                OPPORTUNITIES
+                            </span>
+
+                            <h2>
+                                Upcoming Placement Drives
+                            </h2>
+
+                        </div>
+
+                        <a href="placement-drives.html">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-drive-list">
+
+
+                        <!-- TCS -->
+
+                        <div class="dashboard-drive">
+
+                            <div class="dashboard-company-logo">
+                                T
+                            </div>
+
+                            <div class="dashboard-drive-info">
+
+                                <h3>
+                                    Graduate Software Engineer
+                                </h3>
+
+                                <p>
+                                    Tata Consultancy Services
+                                </p>
+
+                                <div class="dashboard-drive-meta">
+
+                                    <span>
+                                        📅 Sep 05, 2026
+                                    </span>
+
+                                    <span>
+                                        💰 ₹7 LPA
+                                    </span>
+
+                                    <span>
+                                        🎓 CSE / IT
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-drive-right">
+
+                                <span class="eligible-badge">
+                                    ✓ Eligible
+                                </span>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Infosys -->
+
+                        <div class="dashboard-drive">
+
+                            <div class="dashboard-company-logo">
+                                I
+                            </div>
+
+                            <div class="dashboard-drive-info">
+
+                                <h3>
+                                    Systems Engineer
+                                </h3>
+
+                                <p>
+                                    Infosys
+                                </p>
+
+                                <div class="dashboard-drive-meta">
+
+                                    <span>
+                                        📅 Sep 10, 2026
+                                    </span>
+
+                                    <span>
+                                        💰 ₹6.5 LPA
+                                    </span>
+
+                                    <span>
+                                        🎓 All Departments
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-drive-right">
+
+                                <span class="eligible-badge">
+                                    ✓ Eligible
+                                </span>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Zoho -->
+
+                        <div class="dashboard-drive">
+
+                            <div class="dashboard-company-logo">
+                                Z
+                            </div>
+
+                            <div class="dashboard-drive-info">
+
+                                <h3>
+                                    Software Developer
+                                </h3>
+
+                                <p>
+                                    Zoho Corporation
+                                </p>
+
+                                <div class="dashboard-drive-meta">
+
+                                    <span>
+                                        📅 Sep 15, 2026
+                                    </span>
+
+                                    <span>
+                                        💰 ₹8 LPA
+                                    </span>
+
+                                    <span>
+                                        🎓 CSE / IT / ECE
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="dashboard-drive-right">
+
+                                <span class="eligible-badge">
+                                    ✓ Eligible
+                                </span>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     APPLICATION STATUS
+                ================================== -->
+
+                <section class="dashboard-panel application-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                TRACKING
+                            </span>
+
+                            <h2>
+                                Application Status
+                            </h2>
+
+                        </div>
+
+                        <a href="my-applications.html">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="application-list">
+
+
+                        <div class="application-item">
+
+                            <div class="application-company">
+                                T
+                            </div>
+
+                            <div class="application-info">
+
+                                <strong>
+                                    TCS
+                                </strong>
+
+                                <span>
+                                    Software Engineer
+                                </span>
+
+                            </div>
+
+                            <span class="application-status shortlisted">
+                                Shortlisted
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-item">
+
+                            <div class="application-company">
+                                I
+                            </div>
+
+                            <div class="application-info">
+
+                                <strong>
+                                    Infosys
+                                </strong>
+
+                                <span>
+                                    Systems Engineer
+                                </span>
+
+                            </div>
+
+                            <span class="application-status applied">
+                                Applied
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-item">
+
+                            <div class="application-company">
+                                Z
+                            </div>
+
+                            <div class="application-info">
+
+                                <strong>
+                                    Zoho
+                                </strong>
+
+                                <span>
+                                    Software Developer
+                                </span>
+
+                            </div>
+
+                            <span class="application-status interview">
+                                Interview
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-item">
+
+                            <div class="application-company">
+                                A
+                            </div>
+
+                            <div class="application-info">
+
+                                <strong>
+                                    ABC Technologies
+                                </strong>
+
+                                <span>
+                                    Web Developer
+                                </span>
+
+                            </div>
+
+                            <span class="application-status rejected">
+                                Rejected
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- =================================
+                 BOTTOM GRID
+            ================================== -->
+
+            <div class="dashboard-grid bottom-grid">
+
+
+                <!-- =================================
+                     PROFILE COMPLETION
+                ================================== -->
+
+                <section class="dashboard-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                YOUR PROFILE
+                            </span>
+
+                            <h2>
+                                Profile Completion
+                            </h2>
+
+                        </div>
+
+                        <span class="profile-percentage">
+                            80%
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-progress-large">
+
+                        <div class="profile-progress-fill">
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-checklist">
+
+
+                        <div class="profile-check done">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Personal Information
+                                </strong>
+
+                                <small>
+                                    Completed
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-check done">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Academic Details
+                                </strong>
+
+                                <small>
+                                    Completed
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-check done">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Skills
+                                </strong>
+
+                                <small>
+                                    Completed
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-check pending">
+
+                            <span>
+                                !
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Resume
+                                </strong>
+
+                                <small>
+                                    Upload your resume
+                                </small>
+
+                            </div>
+
+                            <a href="#">
+                                Add
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     UPCOMING TESTS
+                ================================== -->
+
+                <section class="dashboard-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                PREPARATION
+                            </span>
+
+                            <h2>
+                                Upcoming Tests
+                            </h2>
+
+                        </div>
+
+                        <a href="aptitude-tests.html">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="test-card">
+
+
+                        <div class="test-icon">
+                            🧠
+                        </div>
+
+
+                        <div class="test-info">
+
+                            <strong>
+                                Placement Aptitude Test
+                            </strong>
+
+                            <span>
+                                Quantitative · Logical · Verbal
+                            </span>
+
+                            <small>
+                                📅 Sep 02, 2026 · 10:00 AM
+                            </small>
+
+                        </div>
+
+
+                        <a href="aptitude-tests.html" class="test-action">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="test-card">
+
+
+                        <div class="test-icon">
+                            💻
+                        </div>
+
+
+                        <div class="test-info">
+
+                            <strong>
+                                Programming Assessment
+                            </strong>
+
+                            <span>
+                                C · Java · Python
+                            </span>
+
+                            <small>
+                                📅 Sep 04, 2026 · 11:00 AM
+                            </small>
+
+                        </div>
+
+
+                        <a href="aptitude-tests.html" class="test-action">
+                            View
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer class="dashboard-footer">
+
+            <span>
+                © 2026 College Placement Portal
+            </span>
+
+            <span>
+                Placement Cell · Student Portal
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+<!-- =========================================
+     MOBILE SIDEBAR OVERLAY
+========================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.toggle("open");
+
+            sidebarOverlay.classList.toggle("active");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.remove("open");
+
+            sidebarOverlay.classList.remove("active");
+
+        }
+    );
+
+</script>
+
+</body>
+
+</html>

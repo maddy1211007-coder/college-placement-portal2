@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="My Applications - College Placement Portal">
+
+<title>My Applications | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Dashboard CSS -->
+
+<link rel="stylesheet"
+    href="css/student-dashboard.css">
+
+
+<!-- Applications CSS -->
+
+<link rel="stylesheet"
+    href="css/my-applications.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     DASHBOARD LAYOUT
+========================================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <a href="index.html"
+                class="logo">
+
+                <div class="logo-icon">
+                    CP
+                </div>
+
+                <div class="logo-text">
+
+                    <span>
+                        College
+                    </span>
+
+                    Placement
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN MENU
+                </span>
+
+
+                <a href="student-dashboard.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="student-profile.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        👤
+                    </span>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a href="placement-drives.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🏢
+                    </span>
+
+                    <span>
+                        Placement Drives
+                    </span>
+
+                </a>
+
+
+                <a href="my-applications.html"
+                    class="sidebar-link active">
+
+                    <span class="sidebar-icon">
+                        📋
+                    </span>
+
+                    <span>
+                        My Applications
+                    </span>
+
+                </a>
+
+
+                <a href="aptitude-tests.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🧠
+                    </span>
+
+                    <span>
+                        Aptitude Tests
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ACCOUNT
+                </span>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🔔
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <span class="help-icon">
+                    ?
+                </span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <span>
+                        Contact Placement Cell
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="login.html"
+                class="logout-link">
+
+                <span>
+                    ↪
+                </span>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search applications...">
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+
+                <button class="notification-btn">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="student-mini-profile">
+
+                    <div class="student-avatar">
+                        MS
+                    </div>
+
+                    <div class="student-mini-info">
+
+                        <strong>
+                            Student Name
+                        </strong>
+
+                        <span>
+                            CSE · Final Year
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             CONTENT
+        ================================== -->
+
+        <div class="applications-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="applications-header">
+
+                <div>
+
+                    <span class="welcome-label">
+                        STUDENT PORTAL
+                    </span>
+
+                    <h1>
+                        My Applications
+                    </h1>
+
+                    <p>
+                        Track all your college placement
+                        applications in one place.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="placement-drives.html"
+                    class="browse-drives-btn">
+
+                    Browse Placement Drives →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SUMMARY
+            ================================== -->
+
+            <div class="application-summary">
+
+
+                <div class="application-summary-card">
+
+                    <div class="application-summary-icon blue">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            04
+                        </strong>
+
+                        <span>
+                            Total Applications
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="application-summary-card">
+
+                    <div class="application-summary-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <span>
+                            Active Applications
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="application-summary-card">
+
+                    <div class="application-summary-icon purple">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <span>
+                            Shortlisted
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="application-summary-card">
+
+                    <div class="application-summary-icon orange">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <span>
+                            Upcoming Tests
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 FILTER TABS
+            ================================== -->
+
+            <div class="application-tabs">
+
+                <button
+                    class="application-tab active"
+                    data-filter="all">
+
+                    All
+                    <span>4</span>
+
+                </button>
+
+
+                <button
+                    class="application-tab"
+                    data-filter="active">
+
+                    Active
+                    <span>3</span>
+
+                </button>
+
+
+                <button
+                    class="application-tab"
+                    data-filter="shortlisted">
+
+                    Shortlisted
+                    <span>1</span>
+
+                </button>
+
+
+                <button
+                    class="application-tab"
+                    data-filter="selected">
+
+                    Selected
+                    <span>0</span>
+
+                </button>
+
+
+                <button
+                    class="application-tab"
+                    data-filter="rejected">
+
+                    Rejected
+                    <span>0</span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================
+                 APPLICATION LIST
+            ================================== -->
+
+            <section
+                class="applications-list"
+                id="applicationsList">
+
+
+
+                <!-- APPLICATION 1 -->
+
+                <article
+                    class="application-card"
+                    data-status="shortlisted">
+
+
+                    <div class="application-company-logo">
+                        T
+                    </div>
+
+
+                    <div class="application-main">
+
+
+                        <div class="application-heading">
+
+                            <div>
+
+                                <span class="application-status shortlisted">
+                                    ★ Shortlisted
+                                </span>
+
+                                <h2>
+                                    Graduate Software Engineer
+                                </h2>
+
+                                <p>
+                                    Tata Consultancy Services
+                                </p>
+
+                            </div>
+
+
+                            <span class="application-id">
+                                APP-2026-001
+                            </span>
+
+                        </div>
+
+
+                        <!-- Timeline -->
+
+                        <div class="application-timeline">
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Applied
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line completed">
+                            </div>
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Shortlisted
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    3
+                                </div>
+
+                                <span>
+                                    Aptitude
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    4
+                                </div>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    5
+                                </div>
+
+                                <span>
+                                    Final
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-meta">
+
+                            <span>
+                                Applied Aug 28, 2026
+                            </span>
+
+                            <span>
+                                ₹7 LPA
+                            </span>
+
+                            <span>
+                                Drive: Sep 05, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-action">
+
+                        <a
+                            href="placement-details.html"
+                            class="application-view-btn">
+
+                            View Drive
+
+                        </a>
+
+                        <span class="next-step">
+                            Next: Aptitude Test
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- APPLICATION 2 -->
+
+                <article
+                    class="application-card"
+                    data-status="active">
+
+
+                    <div class="application-company-logo">
+                        A
+                    </div>
+
+
+                    <div class="application-main">
+
+
+                        <div class="application-heading">
+
+                            <div>
+
+                                <span class="application-status applied">
+                                    ● Applied
+                                </span>
+
+                                <h2>
+                                    Associate Software Engineer
+                                </h2>
+
+                                <p>
+                                    Accenture
+                                </p>
+
+                            </div>
+
+
+                            <span class="application-id">
+                                APP-2026-002
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-timeline">
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Applied
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    2
+                                </div>
+
+                                <span>
+                                    Shortlist
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    3
+                                </div>
+
+                                <span>
+                                    Aptitude
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    4
+                                </div>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    5
+                                </div>
+
+                                <span>
+                                    Final
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-meta">
+
+                            <span>
+                                Applied Aug 27, 2026
+                            </span>
+
+                            <span>
+                                ₹6 LPA
+                            </span>
+
+                            <span>
+                                Drive: Sep 20, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-action">
+
+                        <a
+                            href="placement-details.html"
+                            class="application-view-btn">
+
+                            View Drive
+
+                        </a>
+
+                        <span class="next-step">
+                            Awaiting shortlist
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- APPLICATION 3 -->
+
+                <article
+                    class="application-card"
+                    data-status="active">
+
+
+                    <div class="application-company-logo">
+                        W
+                    </div>
+
+
+                    <div class="application-main">
+
+
+                        <div class="application-heading">
+
+                            <div>
+
+                                <span class="application-status applied">
+                                    ● Applied
+                                </span>
+
+                                <h2>
+                                    Project Engineer
+                                </h2>
+
+                                <p>
+                                    Wipro
+                                </p>
+
+                            </div>
+
+
+                            <span class="application-id">
+                                APP-2026-003
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-timeline">
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Applied
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    2
+                                </div>
+
+                                <span>
+                                    Shortlist
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    3
+                                </div>
+
+                                <span>
+                                    Aptitude
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    4
+                                </div>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line">
+                            </div>
+
+
+                            <div class="timeline-step">
+
+                                <div class="timeline-dot">
+                                    5
+                                </div>
+
+                                <span>
+                                    Final
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-meta">
+
+                            <span>
+                                Applied Aug 26, 2026
+                            </span>
+
+                            <span>
+                                ₹5.5 LPA
+                            </span>
+
+                            <span>
+                                Drive: Sep 24, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-action">
+
+                        <a
+                            href="placement-details.html"
+                            class="application-view-btn">
+
+                            View Drive
+
+                        </a>
+
+                        <span class="next-step">
+                            Awaiting shortlist
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- APPLICATION 4 -->
+
+                <article
+                    class="application-card"
+                    data-status="rejected">
+
+
+                    <div class="application-company-logo">
+                        H
+                    </div>
+
+
+                    <div class="application-main">
+
+
+                        <div class="application-heading">
+
+                            <div>
+
+                                <span class="application-status rejected">
+                                    × Not Selected
+                                </span>
+
+                                <h2>
+                                    Software Trainee
+                                </h2>
+
+                                <p>
+                                    HCLTech
+                                </p>
+
+                            </div>
+
+
+                            <span class="application-id">
+                                APP-2026-004
+                            </span>
+
+                        </div>
+
+
+                        <div class="application-timeline rejected-timeline">
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Applied
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line completed">
+                            </div>
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Shortlisted
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line completed">
+                            </div>
+
+
+                            <div class="timeline-step completed">
+
+                                <div class="timeline-dot">
+                                    ✓
+                                </div>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="timeline-line rejected-line">
+                            </div>
+
+
+                            <div class="timeline-step rejected-step">
+
+                                <div class="timeline-dot">
+                                    ×
+                                </div>
+
+                                <span>
+                                    Not Selected
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="application-meta">
+
+                            <span>
+                                Applied Aug 10, 2026
+                            </span>
+
+                            <span>
+                                ₹5 LPA
+                            </span>
+
+                            <span>
+                                Closed
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-action">
+
+                        <a
+                            href="placement-details.html"
+                            class="application-view-btn">
+
+                            View Drive
+
+                        </a>
+
+                        <span class="next-step rejected-text">
+                            Application closed
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- NO APPLICATIONS -->
+
+            <div
+                class="no-applications"
+                id="noApplications">
+
+                <div>
+                    📋
+                </div>
+
+                <h3>
+                    No applications found
+                </h3>
+
+                <p>
+                    You haven't applied to any placement drives
+                    matching this filter.
+                </p>
+
+                <a href="placement-drives.html">
+                    Browse Placement Drives →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <span>
+                © 2026 College Placement Portal
+            </span>
+
+            <span>
+                Placement Cell · Student Portal
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- SIDEBAR OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+
+    /* =====================================
+       MOBILE SIDEBAR
+    ====================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.toggle("open");
+
+            sidebarOverlay.classList.toggle("active");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.remove("open");
+
+            sidebarOverlay.classList.remove("active");
+
+        }
+    );
+
+
+
+    /* =====================================
+       APPLICATION FILTER
+    ====================================== */
+
+    const applicationTabs =
+        document.querySelectorAll(".application-tab");
+
+    const applicationCards =
+        document.querySelectorAll(".application-card");
+
+    const noApplications =
+        document.getElementById("noApplications");
+
+
+    applicationTabs.forEach(function (tab) {
+
+
+        tab.addEventListener(
+            "click",
+            function () {
+
+
+                applicationTabs.forEach(
+                    function (item) {
+
+                        item.classList.remove("active");
+
+                    }
+                );
+
+
+                tab.classList.add("active");
+
+
+                const filter =
+                    tab.dataset.filter;
+
+
+                let visibleCount = 0;
+
+
+                applicationCards.forEach(
+                    function (card) {
+
+
+                        const status =
+                            card.dataset.status;
+
+
+                        let showCard = false;
+
+
+                        if (filter === "all") {
+
+                            showCard = true;
+
+                        }
+
+                        else if (filter === "active") {
+
+                            showCard =
+                                status === "active" ||
+                                status === "shortlisted";
+
+                        }
+
+                        else if (filter === "shortlisted") {
+
+                            showCard =
+                                status === "shortlisted";
+
+                        }
+
+                        else if (filter === "selected") {
+
+                            showCard =
+                                status === "selected";
+
+                        }
+
+                        else if (filter === "rejected") {
+
+                            showCard =
+                                status === "rejected";
+
+                        }
+
+
+                        if (showCard) {
+
+                            card.style.display = "flex";
+
+                            visibleCount++;
+
+                        }
+
+                        else {
+
+                            card.style.display = "none";
+
+                        }
+
+                    }
+                );
+
+
+                if (visibleCount === 0) {
+
+                    noApplications.style.display =
+                        "block";
+
+                }
+
+                else {
+
+                    noApplications.style.display =
+                        "none";
+
+                }
+
+            }
+        );
+
+    });
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Create Placement Drive - College Placement Portal">
+
+    <title>Create Placement Drive | Professor Portal</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+
+    <!-- Professor Dashboard CSS -->
+
+    <link rel="stylesheet"
+        href="css/professor-dashboard.css">
+
+
+    <!-- Create Drive CSS -->
+
+    <link rel="stylesheet"
+        href="css/professor-create-drive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         PROFESSOR LAYOUT
+    ========================================== -->
+
+    <div class="professor-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside
+            class="professor-sidebar"
+            id="professorSidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="professor-logo-area">
+
+                <a
+                    href="index.html"
+                    class="professor-logo">
+
+                    <div class="professor-logo-icon">
+                        CP
+                    </div>
+
+                    <div class="professor-logo-text">
+
+                        <span>
+                            College
+                        </span>
+
+                        Placement
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="professor-nav">
+
+
+                <div class="professor-nav-section">
+
+                    <span class="professor-nav-title">
+                        PLACEMENT MANAGEMENT
+                    </span>
+
+
+                    <a
+                        href="professor-dashboard.html"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="professor-placement-drives.html"
+                        class="professor-nav-link active">
+
+                        <span class="professor-nav-icon">
+                            🏢
+                        </span>
+
+                        <span>
+                            Placement Drives
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            👨‍🎓
+                        </span>
+
+                        <span>
+                            Students
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📋
+                        </span>
+
+                        <span>
+                            Applications
+                        </span>
+
+                        <span class="nav-count">
+                            12
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            🧠
+                        </span>
+
+                        <span>
+                            Aptitude Tests
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="professor-nav-section">
+
+                    <span class="professor-nav-title">
+                        REPORTS
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📊
+                        </span>
+
+                        <span>
+                            Placement Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📄
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="professor-nav-section">
+
+                    <span class="professor-nav-title">
+                        ACCOUNT
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            🔔
+                        </span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="nav-count">
+                            3
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="professor-sidebar-bottom">
+
+                <div class="professor-help">
+
+                    <span class="professor-help-icon">
+                        ?
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+                        <span>
+                            Placement Cell Support
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="login.html"
+                    class="professor-logout">
+
+                    <span>
+                        ↪
+                    </span>
+
+                    Logout
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =====================================
+             MAIN
+        ====================================== -->
+
+        <main class="professor-main">
+
+
+            <!-- =================================
+                 TOPBAR
+            ================================== -->
+
+            <header class="professor-topbar">
+
+
+                <button
+                    class="professor-mobile-menu"
+                    id="professorMobileMenu">
+
+                    ☰
+
+                </button>
+
+
+                <div class="professor-page-title">
+
+                    <span>
+                        PLACEMENT MANAGEMENT
+                    </span>
+
+                    <strong>
+                        Create Placement Drive
+                    </strong>
+
+                </div>
+
+
+                <div class="professor-topbar-right">
+
+
+                    <button
+                        class="professor-notification">
+
+                        🔔
+
+                        <span></span>
+
+                    </button>
+
+
+                    <div class="professor-profile-mini">
+
+                        <div class="professor-avatar">
+                            DR
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Dr. Professor Name
+                            </strong>
+
+                            <span>
+                                Placement Coordinator
+                            </span>
+
+                        </div>
+
+
+                        <span class="profile-arrow">
+                            ▾
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================
+                 PAGE CONTENT
+            ================================== -->
+
+            <div class="professor-content create-drive-content">
+
+
+                <!-- BACK -->
+
+                <a
+                    href="professor-placement-drives.html"
+                    class="back-to-drives">
+
+                    ← Back to Placement Drives
+
+                </a>
+
+
+
+                <!-- PAGE HEADER -->
+
+                <section class="create-drive-header">
+
+                    <div>
+
+                        <span>
+                            NEW PLACEMENT OPPORTUNITY
+                        </span>
+
+                        <h1>
+                            Create Placement Drive
+                        </h1>
+
+                        <p>
+                            Add the details of a new placement
+                            opportunity for eligible students.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     FORM
+                ================================== -->
+
+                <form
+                    id="createDriveForm"
+                    class="create-drive-form">
+
+
+                    <!-- =================================
+                         SECTION 1
+                    ================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-step">
+                                01
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    COMPANY INFORMATION
+                                </span>
+
+                                <h2>
+                                    Tell us about the company
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Company Name -->
+
+                            <div class="form-field">
+
+                                <label for="companyName">
+                                    Company Name
+                                    <b>*</b>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="companyName"
+                                    name="companyName"
+                                    placeholder="e.g. Tata Consultancy Services"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Website -->
+
+                            <div class="form-field">
+
+                                <label for="companyWebsite">
+                                    Company Website
+                                </label>
+
+                                <input
+                                    type="url"
+                                    id="companyWebsite"
+                                    name="companyWebsite"
+                                    placeholder="https://www.company.com">
+
+                            </div>
+
+
+                            <!-- Description -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label for="companyDescription">
+                                    Company Description
+                                </label>
+
+                                <textarea
+                                    id="companyDescription"
+                                    name="companyDescription"
+                                    rows="4"
+                                    placeholder="Write a short description about the company..."></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================
+                         SECTION 2
+                    ================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-step">
+                                02
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    JOB DETAILS
+                                </span>
+
+                                <h2>
+                                    Define the opportunity
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Job Role -->
+
+                            <div class="form-field">
+
+                                <label for="jobRole">
+                                    Job Role
+                                    <b>*</b>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="jobRole"
+                                    name="jobRole"
+                                    placeholder="e.g. Software Engineer"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Job Type -->
+
+                            <div class="form-field">
+
+                                <label for="jobType">
+                                    Job Type
+                                </label>
+
+                                <select
+                                    id="jobType"
+                                    name="jobType">
+
+                                    <option value="full-time">
+                                        Full Time
+                                    </option>
+
+                                    <option value="internship">
+                                        Internship
+                                    </option>
+
+                                    <option value="contract">
+                                        Contract
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Location -->
+
+                            <div class="form-field">
+
+                                <label for="location">
+                                    Job Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="location"
+                                    name="location"
+                                    placeholder="e.g. Chennai, Tamil Nadu">
+
+                            </div>
+
+
+                            <!-- Work Mode -->
+
+                            <div class="form-field">
+
+                                <label for="workMode">
+                                    Work Mode
+                                </label>
+
+                                <select
+                                    id="workMode"
+                                    name="workMode">
+
+                                    <option value="onsite">
+                                        On-site
+                                    </option>
+
+                                    <option value="hybrid">
+                                        Hybrid
+                                    </option>
+
+                                    <option value="remote">
+                                        Remote
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Salary -->
+
+                            <div class="form-field">
+
+                                <label for="salary">
+                                    Salary / Package
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="salary"
+                                    name="salary"
+                                    placeholder="e.g. ₹6 LPA">
+
+                            </div>
+
+
+                            <!-- Vacancies -->
+
+                            <div class="form-field">
+
+                                <label for="vacancies">
+                                    Number of Vacancies
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="vacancies"
+                                    name="vacancies"
+                                    min="1"
+                                    placeholder="e.g. 20">
+
+                            </div>
+
+
+                            <!-- Skills -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label for="skills">
+                                    Required Skills
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="skills"
+                                    name="skills"
+                                    placeholder="e.g. Java, Python, SQL, Communication">
+
+                                <small>
+                                    Separate multiple skills with commas.
+                                </small>
+
+                            </div>
+
+
+                            <!-- Job Description -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label for="jobDescription">
+                                    Job Description
+                                </label>
+
+                                <textarea
+                                    id="jobDescription"
+                                    name="jobDescription"
+                                    rows="5"
+                                    placeholder="Describe the job responsibilities and requirements..."></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================
+                         SECTION 3
+                    ================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-step">
+                                03
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    ELIGIBILITY
+                                </span>
+
+                                <h2>
+                                    Set student eligibility
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Departments -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label>
+                                    Eligible Departments
+                                    <b>*</b>
+                                </label>
+
+
+                                <div class="department-options">
+
+
+                                    <label class="check-option">
+
+                                        <input
+                                            type="checkbox"
+                                            name="department"
+                                            value="CSE">
+
+                                        <span>
+                                            CSE
+                                        </span>
+
+                                    </label>
+
+
+                                    <label class="check-option">
+
+                                        <input
+                                            type="checkbox"
+                                            name="department"
+                                            value="ECE">
+
+                                        <span>
+                                            ECE
+                                        </span>
+
+                                    </label>
+
+
+                                    <label class="check-option">
+
+                                        <input
+                                            type="checkbox"
+                                            name="department"
+                                            value="EEE">
+
+                                        <span>
+                                            EEE
+                                        </span>
+
+                                    </label>
+
+
+                                    <label class="check-option">
+
+                                        <input
+                                            type="checkbox"
+                                            name="department"
+                                            value="MECH">
+
+                                        <span>
+                                            MECH
+                                        </span>
+
+                                    </label>
+
+
+                                    <label class="check-option">
+
+                                        <input
+                                            type="checkbox"
+                                            name="department"
+                                            value="CIVIL">
+
+                                        <span>
+                                            CIVIL
+                                        </span>
+
+                                    </label>
+
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- CGPA -->
+
+                            <div class="form-field">
+
+                                <label for="minCgpa">
+                                    Minimum CGPA
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="minCgpa"
+                                    name="minCgpa"
+                                    min="0"
+                                    max="10"
+                                    step="0.1"
+                                    placeholder="e.g. 7.0">
+
+                            </div>
+
+
+                            <!-- Graduation Year -->
+
+                            <div class="form-field">
+
+                                <label for="graduationYear">
+                                    Graduation Year
+                                </label>
+
+                                <select
+                                    id="graduationYear"
+                                    name="graduationYear">
+
+                                    <option value="">
+                                        Select year
+                                    </option>
+
+                                    <option value="2026">
+                                        2026
+                                    </option>
+
+                                    <option value="2027">
+                                        2027
+                                    </option>
+
+                                    <option value="2028">
+                                        2028
+                                    </option>
+
+                                    <option value="2029">
+                                        2029
+                                    </option>
+
+                                    <option value="2030">
+                                        2030
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Backlogs -->
+
+                            <div class="form-field">
+
+                                <label for="backlogs">
+                                    Backlogs Allowed
+                                </label>
+
+                                <select
+                                    id="backlogs"
+                                    name="backlogs">
+
+                                    <option value="no">
+                                        No
+                                    </option>
+
+                                    <option value="one">
+                                        Up to 1
+                                    </option>
+
+                                    <option value="two">
+                                        Up to 2
+                                    </option>
+
+                                    <option value="any">
+                                        Any
+
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Gender -->
+
+                            <div class="form-field">
+
+                                <label for="gender">
+                                    Eligibility
+                                </label>
+
+                                <select
+                                    id="gender"
+                                    name="gender">
+
+                                    <option value="all">
+                                        All Students
+                                    </option>
+
+                                    <option value="male">
+                                        Male Students
+                                    </option>
+
+                                    <option value="female">
+                                        Female Students
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================
+                         SECTION 4
+                    ================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-step">
+                                04
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    DRIVE SCHEDULE
+                                </span>
+
+                                <h2>
+                                    Set the placement schedule
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Application Deadline -->
+
+                            <div class="form-field">
+
+                                <label for="applicationDeadline">
+                                    Application Deadline
+                                    <b>*</b>
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="applicationDeadline"
+                                    name="applicationDeadline"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Drive Date -->
+
+                            <div class="form-field">
+
+                                <label for="driveDate">
+                                    Drive Date
+                                    <b>*</b>
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="driveDate"
+                                    name="driveDate"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Drive Time -->
+
+                            <div class="form-field">
+
+                                <label for="driveTime">
+                                    Drive Time
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="driveTime"
+                                    name="driveTime">
+
+                            </div>
+
+
+                            <!-- Venue -->
+
+                            <div class="form-field">
+
+                                <label for="venue">
+                                    Venue
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="venue"
+                                    name="venue"
+                                    placeholder="e.g. College Auditorium">
+
+                            </div>
+
+
+                            <!-- Selection Process -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label for="selectionProcess">
+                                    Selection Process
+                                </label>
+
+                                <textarea
+                                    id="selectionProcess"
+                                    name="selectionProcess"
+                                    rows="4"
+                                    placeholder="e.g. Aptitude Test → Technical Interview → HR Interview"></textarea>
+
+                            </div>
+
+
+                            <!-- Instructions -->
+
+                            <div
+                                class="form-field full-width">
+
+                                <label for="instructions">
+                                    Instructions for Students
+                                </label>
+
+                                <textarea
+                                    id="instructions"
+                                    name="instructions"
+                                    rows="4"
+                                    placeholder="Add any important instructions for students..."></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================
+                         FORM ACTIONS
+                    ================================== -->
+
+                    <div class="form-actions">
+
+
+                        <a
+                            href="professor-placement-drives.html"
+                            class="cancel-drive-btn">
+
+                            Cancel
+
+                        </a>
+
+
+                        <button
+                            type="button"
+                            class="save-draft-btn"
+                            id="saveDraftBtn">
+
+                            Save as Draft
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="publish-drive-btn">
+
+                            Publish Placement Drive
+                            <span>→</span>
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- FOOTER -->
+
+            <footer class="professor-footer">
+
+                <span>
+                    © 2026 College Placement Portal
+                </span>
+
+                <span>
+                    Professor Portal · Placement Cell
+                </span>
+
+            </footer>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div
+        class="professor-overlay"
+        id="professorOverlay">
+    </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    // =========================================
+    // MOBILE MENU
+    // =========================================
+
+    const mobileMenu =
+        document.getElementById("professorMobileMenu");
+
+    const sidebar =
+        document.getElementById("professorSidebar");
+
+    const overlay =
+        document.getElementById("professorOverlay");
+
+
+    if (mobileMenu) {
+
+        mobileMenu.addEventListener("click", function () {
+
+            sidebar.classList.toggle("open");
+
+            overlay.classList.toggle("active");
+
+        });
+
+    }
+
+
+    if (overlay) {
+
+        overlay.addEventListener("click", function () {
+
+            sidebar.classList.remove("open");
+
+            overlay.classList.remove("active");
+
+        });
+
+    }
+
+
+
+    // =========================================
+    // FORM ELEMENTS
+    // =========================================
+
+    const form =
+        document.getElementById("createDriveForm");
+
+    const companyName =
+        document.getElementById("companyName");
+
+    const companyWebsite =
+        document.getElementById("companyWebsite");
+
+    const jobRole =
+        document.getElementById("jobRole");
+
+    const location =
+        document.getElementById("location");
+
+    const salary =
+        document.getElementById("salary");
+
+    const vacancies =
+        document.getElementById("vacancies");
+
+    const minCgpa =
+        document.getElementById("minCgpa");
+
+    const applicationDeadline =
+        document.getElementById("applicationDeadline");
+
+    const driveDate =
+        document.getElementById("driveDate");
+
+    const saveDraftBtn =
+        document.getElementById("saveDraftBtn");
+
+
+
+    // =========================================
+    // DATE SETUP
+    // =========================================
+
+    const today =
+        new Date().toISOString().split("T")[0];
+
+
+    applicationDeadline.min = today;
+
+    driveDate.min = today;
+
+
+
+    // =========================================
+    // APPLICATION DEADLINE CHANGE
+    // =========================================
+
+    applicationDeadline.addEventListener(
+        "change",
+        function () {
+
+            driveDate.min =
+                applicationDeadline.value;
+
+        }
+    );
+
+
+
+    // =========================================
+    // SAVE DRAFT
+    // =========================================
+
+    saveDraftBtn.addEventListener(
+        "click",
+        function () {
+
+            const company =
+                companyName.value.trim();
+
+
+            if (company === "") {
+
+                alert(
+                    "Enter the company name before saving the draft."
+                );
+
+                companyName.focus();
+
+                return;
+
+            }
+
+
+            alert(
+                "Placement drive saved as draft successfully."
+            );
+
+        }
+    );
+
+
+
+    // =========================================
+    // PUBLISH FORM
+    // =========================================
+
+    form.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            // ---------------------------------
+            // COMPANY NAME
+            // ---------------------------------
+
+            if (
+                companyName.value.trim().length < 2
+            ) {
+
+                alert(
+                    "Please enter a valid company name."
+                );
+
+                companyName.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // JOB ROLE
+            // ---------------------------------
+
+            if (
+                jobRole.value.trim().length < 2
+            ) {
+
+                alert(
+                    "Please enter the job role."
+                );
+
+                jobRole.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // LOCATION
+            // ---------------------------------
+
+            if (
+                location.value.trim() === ""
+            ) {
+
+                alert(
+                    "Please enter the job location."
+                );
+
+                location.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // SALARY
+            // ---------------------------------
+
+            if (
+                salary.value.trim() === ""
+            ) {
+
+                alert(
+                    "Please enter the salary or package."
+                );
+
+                salary.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // VACANCIES
+            // ---------------------------------
+
+            if (
+                vacancies.value !== "" &&
+                Number(vacancies.value) < 1
+            ) {
+
+                alert(
+                    "Number of vacancies must be at least 1."
+                );
+
+                vacancies.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // CGPA
+            // ---------------------------------
+
+            if (
+                minCgpa.value !== ""
+            ) {
+
+                const cgpa =
+                    Number(minCgpa.value);
+
+
+                if (
+                    cgpa < 0 ||
+                    cgpa > 10
+                ) {
+
+                    alert(
+                        "CGPA must be between 0 and 10."
+                    );
+
+                    minCgpa.focus();
+
+                    return;
+
+                }
+
+            }
+
+
+
+            // ---------------------------------
+            // DEPARTMENTS
+            // ---------------------------------
+
+            const departments =
+                document.querySelectorAll(
+                    'input[name="department"]:checked'
+                );
+
+
+            if (
+                departments.length === 0
+            ) {
+
+                alert(
+                    "Please select at least one eligible department."
+                );
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // APPLICATION DEADLINE
+            // ---------------------------------
+
+            if (
+                applicationDeadline.value === ""
+            ) {
+
+                alert(
+                    "Please select the application deadline."
+                );
+
+                applicationDeadline.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // DRIVE DATE
+            // ---------------------------------
+
+            if (
+                driveDate.value === ""
+            ) {
+
+                alert(
+                    "Please select the placement drive date."
+                );
+
+                driveDate.focus();
+
+                return;
+
+            }
+
+
+
+            // ---------------------------------
+            // DATE COMPARISON
+            // ---------------------------------
+
+            const deadline =
+                new Date(
+                    applicationDeadline.value
+                );
+
+            const placementDate =
+                new Date(
+                    driveDate.value
+                );
+
+
+            if (
+                placementDate < deadline
+            ) {
+
+                alert(
+                    "Drive date cannot be before the application deadline."
+                );
+
+                driveDate.focus();
+
+                return;
+
+            }
+
+
+
+// =================================
+// SAVE PLACEMENT DRIVE
+// =================================
+
+const selectedDepartments =
+    Array.from(
+        document.querySelectorAll(
+            'input[name="department"]:checked'
+        )
+    ).map(function (checkbox) {
+
+        return checkbox.value;
+
+    });
+
+
+const placementDrive = {
+
+    id:
+        "DRIVE-" +
+        Date.now(),
+
+    companyName:
+        companyName.value.trim(),
+
+    companyWebsite:
+        companyWebsite.value.trim(),
+
+    companyDescription:
+        document.getElementById(
+            "companyDescription"
+        ).value.trim(),
+
+    jobRole:
+        jobRole.value.trim(),
+
+    jobType:
+        document.getElementById(
+            "jobType"
+        ).value,
+
+    location:
+        location.value.trim(),
+
+    workMode:
+        document.getElementById(
+            "workMode"
+        ).value,
+
+    salary:
+        salary.value.trim(),
+
+    vacancies:
+        vacancies.value,
+
+    skills:
+        document.getElementById(
+            "skills"
+        ).value.trim(),
+
+    jobDescription:
+        document.getElementById(
+            "jobDescription"
+        ).value.trim(),
+
+    departments:
+        selectedDepartments,
+
+    minCgpa:
+        minCgpa.value,
+
+    graduationYear:
+        document.getElementById(
+            "graduationYear"
+        ).value,
+
+    backlogs:
+        document.getElementById(
+            "backlogs"
+        ).value,
+
+    eligibility:
+        document.getElementById(
+            "gender"
+        ).value,
+
+    applicationDeadline:
+        applicationDeadline.value,
+
+    driveDate:
+        driveDate.value,
+
+    driveTime:
+        document.getElementById(
+            "driveTime"
+        ).value,
+
+    venue:
+        document.getElementById(
+            "venue"
+        ).value.trim(),
+
+    selectionProcess:
+        document.getElementById(
+            "selectionProcess"
+        ).value.trim(),
+
+    instructions:
+        document.getElementById(
+            "instructions"
+        ).value.trim(),
+
+    applications:
+        0,
+
+    status:
+        "upcoming",
+
+    createdAt:
+        new Date().toISOString()
+
+};
+
+
+// =================================
+// GET EXISTING DRIVES
+// =================================
+
+let existingDrives =
+    JSON.parse(
+        localStorage.getItem(
+            "placementDrives"
+        )
+    ) || [];
+
+
+// =================================
+// ADD NEW DRIVE
+// =================================
+
+existingDrives.push(
+    placementDrive
+);
+
+
+// =================================
+// SAVE TO LOCAL STORAGE
+// =================================
+
+localStorage.setItem(
+    "placementDrives",
+    JSON.stringify(existingDrives)
+);
+
+
+// =================================
+// SUCCESS
+// =================================
+
+alert(
+    "Placement drive published successfully!"
+);
+
+
+// =================================
+// GO TO PLACEMENT DRIVES
+// =================================
+
+window.location.href =
+    "professor-placement-drives.html";
+
+        }
+    );
+
+});
+
+</script>
+
+</body>
+
+</html>

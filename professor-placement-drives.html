@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Manage Placement Drives - College Placement Portal">
+
+    <title>Placement Drives | Professor Portal</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+
+    <!-- Professor Dashboard CSS -->
+
+    <link rel="stylesheet"
+        href="css/professor-dashboard.css">
+
+
+    <!-- Placement Drives CSS -->
+
+    <link rel="stylesheet"
+        href="css/professor-placement-drives.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         PROFESSOR LAYOUT
+    ========================================== -->
+
+    <div class="professor-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside
+            class="professor-sidebar"
+            id="professorSidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="professor-logo-area">
+
+                <a href="index.html"
+                    class="professor-logo">
+
+                    <div class="professor-logo-icon">
+                        CP
+                    </div>
+
+                    <div class="professor-logo-text">
+
+                        <span>
+                            College
+                        </span>
+
+                        Placement
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="professor-nav">
+
+
+                <!-- PLACEMENT MANAGEMENT -->
+
+                <div class="professor-nav-section">
+
+
+                    <span class="professor-nav-title">
+                        PLACEMENT MANAGEMENT
+                    </span>
+
+
+                    <a
+                        href="professor-dashboard.html"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="professor-placement-drives.html"
+                        class="professor-nav-link active">
+
+                        <span class="professor-nav-icon">
+                            🏢
+                        </span>
+
+                        <span>
+                            Placement Drives
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            👨‍🎓
+                        </span>
+
+                        <span>
+                            Students
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📋
+                        </span>
+
+                        <span>
+                            Applications
+                        </span>
+
+                        <span class="nav-count">
+                            12
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            🧠
+                        </span>
+
+                        <span>
+                            Aptitude Tests
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- REPORTS -->
+
+                <div class="professor-nav-section">
+
+
+                    <span class="professor-nav-title">
+                        REPORTS
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📊
+                        </span>
+
+                        <span>
+                            Placement Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            📄
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- ACCOUNT -->
+
+                <div class="professor-nav-section">
+
+
+                    <span class="professor-nav-title">
+                        ACCOUNT
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            🔔
+                        </span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="nav-count">
+                            3
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="professor-nav-link">
+
+                        <span class="professor-nav-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+
+            <!-- SIDEBAR BOTTOM -->
+
+            <div class="professor-sidebar-bottom">
+
+
+                <div class="professor-help">
+
+                    <span class="professor-help-icon">
+                        ?
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Need Help?
+                        </strong>
+
+                        <span>
+                            Placement Cell Support
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="login.html"
+                    class="professor-logout">
+
+                    <span>
+                        ↪
+                    </span>
+
+                    Logout
+
+                </a>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =====================================
+             MAIN
+        ====================================== -->
+
+        <main class="professor-main">
+
+
+            <!-- =================================
+                 TOPBAR
+            ================================== -->
+
+            <header class="professor-topbar">
+
+
+                <button
+                    class="professor-mobile-menu"
+                    id="professorMobileMenu">
+
+                    ☰
+
+                </button>
+
+
+                <div class="professor-page-title">
+
+                    <span>
+                        PLACEMENT MANAGEMENT
+                    </span>
+
+                    <strong>
+                        Placement Drives
+                    </strong>
+
+                </div>
+
+
+                <div class="professor-topbar-right">
+
+
+                    <button
+                        class="professor-notification">
+
+                        🔔
+
+                        <span></span>
+
+                    </button>
+
+
+                    <div class="professor-profile-mini">
+
+
+                        <div class="professor-avatar">
+                            DR
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Dr. Professor Name
+                            </strong>
+
+                            <span>
+                                Placement Coordinator
+                            </span>
+
+                        </div>
+
+
+                        <span class="profile-arrow">
+                            ▾
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================
+                 CONTENT
+            ================================== -->
+
+            <div class="professor-content placement-drives-content">
+
+
+                <!-- PAGE HEADER -->
+
+                <section class="drives-page-header">
+
+
+                    <div>
+
+                        <span class="drives-label">
+                            PLACEMENT MANAGEMENT
+                        </span>
+
+                        <h1>
+                            Placement Drives
+                        </h1>
+
+                        <p>
+                            Create, manage and monitor
+                            your college placement drives.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="create-drive-main-btn"
+                        id="createDriveBtn">
+
+                        <span>
+                            +
+                        </span>
+
+                        Create Placement Drive
+
+                    </button>
+
+                </section>
+
+
+
+                <!-- =================================
+                     STATISTICS
+                ================================== -->
+
+                <section class="drive-statistics">
+
+
+                    <div class="drive-stat-card">
+
+                        <div class="drive-stat-icon blue">
+                            🏢
+                        </div>
+
+                        <div>
+
+                            <span>
+                                TOTAL DRIVES
+                            </span>
+
+                            <strong>
+                                24
+                            </strong>
+
+                            <small>
+                                This academic year
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="drive-stat-card">
+
+                        <div class="drive-stat-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                OPEN DRIVES
+                            </span>
+
+                            <strong>
+                                08
+                            </strong>
+
+                            <small>
+                                Accepting applications
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="drive-stat-card">
+
+                        <div class="drive-stat-icon orange">
+                            ◷
+                        </div>
+
+                        <div>
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <small>
+                                Scheduled drives
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="drive-stat-card">
+
+                        <div class="drive-stat-icon purple">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                COMPLETED
+                            </span>
+
+                            <strong>
+                                11
+                            </strong>
+
+                            <small>
+                                Completed drives
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     FILTER BAR
+                ================================== -->
+
+                <section class="drive-filter-card">
+
+
+                    <div class="drive-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            type="text"
+                            id="driveSearch"
+                            placeholder="Search company, job role...">
+
+                    </div>
+
+
+                    <select
+                        id="statusFilter">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="open">
+                            Open
+                        </option>
+
+                        <option value="upcoming">
+                            Upcoming
+                        </option>
+
+                        <option value="closed">
+                            Closed
+                        </option>
+
+                    </select>
+
+
+                    <select
+                        id="departmentFilter">
+
+                        <option value="all">
+                            All Departments
+                        </option>
+
+                        <option value="CSE">
+                            Computer Science
+                        </option>
+
+                        <option value="ECE">
+                            Electronics
+                        </option>
+
+                        <option value="EEE">
+                            Electrical
+                        </option>
+
+                        <option value="MECH">
+                            Mechanical
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        class="clear-filter-btn"
+                        id="clearFilters">
+
+                        Clear
+
+                    </button>
+
+                </section>
+
+
+
+                <!-- =================================
+                     DRIVES TABLE
+                ================================== -->
+
+                <section class="drives-table-card">
+
+
+                    <div class="drives-table-header">
+
+
+                        <div>
+
+                            <span>
+                                ALL PLACEMENT DRIVES
+                            </span>
+
+                            <h2>
+                                Placement Drives
+                            </h2>
+
+                        </div>
+
+
+                        <span
+                            class="drive-result-count"
+                            id="driveResultCount">
+
+                            6 Drives
+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="drives-table-wrapper">
+
+
+                        <table class="drives-table">
+
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        COMPANY
+                                    </th>
+
+                                    <th>
+                                        JOB ROLE
+                                    </th>
+
+                                    <th>
+                                        ELIGIBILITY
+                                    </th>
+
+                                    <th>
+                                        DRIVE DATE
+                                    </th>
+
+                                    <th>
+                                        DEADLINE
+                                    </th>
+
+                                    <th>
+                                        APPLICATIONS
+                                    </th>
+
+                                    <th>
+                                        STATUS
+                                    </th>
+
+                                    <th>
+                                        ACTION
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="drivesTableBody">
+
+
+                                <!-- TCS -->
+
+                                <tr
+                                    data-company="tcs"
+                                    data-role="software engineer"
+                                    data-status="open"
+                                    data-department="CSE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo tcs">
+                                                T
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    TCS
+                                                </strong>
+
+                                                <span>
+                                                    Tata Consultancy Services
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Software Engineer
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            7.0+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 05, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Sep 02, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            86
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status open">
+                                            Open
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <!-- ACCENTURE -->
+
+                                <tr
+                                    data-company="accenture"
+                                    data-role="associate software engineer"
+                                    data-status="open"
+                                    data-department="CSE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo accenture">
+                                                A
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Accenture
+                                                </strong>
+
+                                                <span>
+                                                    Accenture Solutions
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Associate Software Engineer
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            6.5+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 20, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Sep 17, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            64
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status open">
+                                            Open
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <!-- WIPRO -->
+
+                                <tr
+                                    data-company="wipro"
+                                    data-role="project engineer"
+                                    data-status="upcoming"
+                                    data-department="CSE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo wipro">
+                                                W
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Wipro
+                                                </strong>
+
+                                                <span>
+                                                    Wipro Limited
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Project Engineer
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            6.0+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 24, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Sep 21, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            41
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status upcoming">
+                                            Upcoming
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <!-- ZOHO -->
+
+                                <tr
+                                    data-company="zoho"
+                                    data-role="software developer"
+                                    data-status="upcoming"
+                                    data-department="CSE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo zoho">
+                                                Z
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Zoho
+                                                </strong>
+
+                                                <span>
+                                                    Zoho Corporation
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Software Developer
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            7.0+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Oct 02, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Sep 29, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            38
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status upcoming">
+                                            Upcoming
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <!-- INFOSYS -->
+
+                                <tr
+                                    data-company="infosys"
+                                    data-role="systems engineer"
+                                    data-status="closed"
+                                    data-department="ECE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo infosys">
+                                                I
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Infosys
+                                                </strong>
+
+                                                <span>
+                                                    Infosys Limited
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Systems Engineer
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            6.5+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Aug 18, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Aug 15, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            72
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status closed">
+                                            Closed
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                <!-- COGNIZANT -->
+
+                                <tr
+                                    data-company="cognizant"
+                                    data-role="program analyst"
+                                    data-status="closed"
+                                    data-department="EEE">
+
+
+                                    <td>
+
+                                        <div class="company-cell">
+
+                                            <div class="company-logo cognizant">
+                                                C
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Cognizant
+                                                </strong>
+
+                                                <span>
+                                                    Cognizant Technology
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="table-role">
+                                            Program Analyst
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="eligibility-badge">
+                                            6.0+ CGPA
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+                                        Aug 10, 2026
+                                    </td>
+
+
+                                    <td>
+                                        Aug 07, 2026
+                                    </td>
+
+
+                                    <td>
+
+                                        <strong class="application-number">
+                                            55
+                                        </strong>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="table-status closed">
+                                            Closed
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            class="table-action"
+                                            data-action="view">
+
+                                            View
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- EMPTY STATE -->
+
+                    <div
+                        class="drives-empty"
+                        id="drivesEmpty">
+
+                        <div>
+                            ⌕
+                        </div>
+
+                        <h3>
+                            No drives found
+                        </h3>
+
+                        <p>
+                            Try changing your search or filters.
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- FOOTER -->
+
+            <footer class="professor-footer">
+
+                <span>
+                    © 2026 College Placement Portal
+                </span>
+
+                <span>
+                    Professor Portal · Placement Cell
+                </span>
+
+            </footer>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div
+        class="professor-overlay"
+        id="professorOverlay">
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+// =====================================
+// MOBILE MENU
+// =====================================
+
+const mobileMenu =
+    document.getElementById("professorMobileMenu");
+
+const sidebar =
+    document.getElementById("professorSidebar");
+
+const overlay =
+    document.getElementById("professorOverlay");
+
+
+mobileMenu.addEventListener(
+    "click",
+    function () {
+
+        sidebar.classList.toggle("open");
+        overlay.classList.toggle("active");
+
+    }
+);
+
+
+overlay.addEventListener(
+    "click",
+    function () {
+
+        sidebar.classList.remove("open");
+        overlay.classList.remove("active");
+
+    }
+);
+
+
+
+// =====================================
+// ELEMENTS
+// =====================================
+
+const searchInput =
+    document.getElementById("driveSearch");
+
+const statusFilter =
+    document.getElementById("statusFilter");
+
+const departmentFilter =
+    document.getElementById("departmentFilter");
+
+const clearFilters =
+    document.getElementById("clearFilters");
+
+const tableBody =
+    document.getElementById("drivesTableBody");
+
+const resultCount =
+    document.getElementById("driveResultCount");
+
+const emptyState =
+    document.getElementById("drivesEmpty");
+
+
+
+// =====================================
+// LOAD SAVED DRIVES
+// =====================================
+
+function loadSavedDrives() {
+
+    const savedDrives =
+        JSON.parse(
+            localStorage.getItem("placementDrives")
+        ) || [];
+
+
+    savedDrives.forEach(
+        function (drive) {
+
+            createDriveRow(drive);
+
+        }
+    );
+
+}
+
+
+
+// =====================================
+// CREATE DRIVE ROW
+// =====================================
+
+function createDriveRow(drive) {
+
+    const row =
+        document.createElement("tr");
+
+
+    const companyName =
+        drive.companyName || "Unknown Company";
+
+
+    const jobRole =
+        drive.jobRole || "Not specified";
+
+
+    const minCgpa =
+        drive.minCgpa
+            ? drive.minCgpa + "+ CGPA"
+            : "No CGPA";
+
+
+    const driveDate =
+        formatDate(drive.driveDate);
+
+
+    const deadline =
+        formatDate(
+            drive.applicationDeadline
+        );
+
+
+    const applications =
+        drive.applications || 0;
+
+
+    const status =
+        drive.status || "upcoming";
+
+
+    const departments =
+        Array.isArray(drive.departments)
+            ? drive.departments
+            : [];
+
+
+    const departmentText =
+        departments.length > 0
+            ? departments.join(",")
+            : "all";
+
+
+    row.dataset.company =
+        companyName.toLowerCase();
+
+
+    row.dataset.role =
+        jobRole.toLowerCase();
+
+
+    row.dataset.status =
+        status;
+
+
+    row.dataset.department =
+        departmentText;
+
+
+    row.dataset.driveId =
+        drive.id || "";
+
+
+    row.innerHTML = `
+
+        <td>
+
+            <div class="company-cell">
+
+                <div class="company-logo">
+
+                    ${companyName.charAt(0).toUpperCase()}
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        ${escapeHtml(companyName)}
+                    </strong>
+
+                    <span>
+                        ${escapeHtml(
+                            drive.companyDescription ||
+                            companyName
+                        )}
+                    </span>
+
+                </div>
+
+            </div>
+
+        </td>
+
+
+        <td>
+
+            <strong class="table-role">
+
+                ${escapeHtml(jobRole)}
+
+            </strong>
+
+        </td>
+
+
+        <td>
+
+            <span class="eligibility-badge">
+
+                ${escapeHtml(minCgpa)}
+
+            </span>
+
+        </td>
+
+
+        <td>
+
+            ${driveDate}
+
+        </td>
+
+
+        <td>
+
+            ${deadline}
+
+        </td>
+
+
+        <td>
+
+            <strong class="application-number">
+
+                ${applications}
+
+            </strong>
+
+        </td>
+
+
+        <td>
+
+            <span class="table-status ${status}">
+
+                ${capitalizeFirstLetter(status)}
+
+            </span>
+
+        </td>
+
+
+        <td>
+
+            <button
+                class="table-action"
+                data-action="view">
+
+                View
+
+            </button>
+
+        </td>
+
+    `;
+
+
+    tableBody.appendChild(row);
+
+}
+
+
+
+// =====================================
+// FORMAT DATE
+// =====================================
+
+function formatDate(dateString) {
+
+    if (!dateString) {
+
+        return "-";
+
+    }
+
+
+    const date =
+        new Date(dateString);
+
+
+    if (isNaN(date.getTime())) {
+
+        return dateString;
+
+    }
+
+
+    return date.toLocaleDateString(
+        "en-US",
+        {
+            month: "short",
+            day: "2-digit",
+            year: "numeric"
+        }
+    );
+
+}
+
+
+
+// =====================================
+// CAPITALIZE TEXT
+// =====================================
+
+function capitalizeFirstLetter(text) {
+
+    if (!text) {
+
+        return "";
+
+    }
+
+
+    return text.charAt(0).toUpperCase()
+        + text.slice(1);
+
+}
+
+
+
+// =====================================
+// ESCAPE HTML
+// =====================================
+
+function escapeHtml(text) {
+
+    if (text === null || text === undefined) {
+
+        return "";
+
+    }
+
+
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+
+
+// =====================================
+// SEARCH + FILTER
+// =====================================
+
+function filterDrives() {
+
+    const search =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+
+    const status =
+        statusFilter.value;
+
+
+    const department =
+        departmentFilter.value;
+
+
+    const tableRows =
+        document.querySelectorAll(
+            "#drivesTableBody tr"
+        );
+
+
+    let visibleCount = 0;
+
+
+    tableRows.forEach(
+        function (row) {
+
+            const company =
+                row.dataset.company || "";
+
+
+            const role =
+                row.dataset.role || "";
+
+
+            const rowStatus =
+                row.dataset.status || "";
+
+
+            const rowDepartment =
+                row.dataset.department || "";
+
+
+            const matchesSearch =
+                company.includes(search) ||
+                role.includes(search);
+
+
+            const matchesStatus =
+                status === "all" ||
+                rowStatus === status;
+
+
+            let matchesDepartment =
+                true;
+
+
+            if (department !== "all") {
+
+                const departments =
+                    rowDepartment.split(",");
+
+
+                matchesDepartment =
+                    departments.includes(
+                        department
+                    );
+
+            }
+
+
+            const shouldShow =
+                matchesSearch &&
+                matchesStatus &&
+                matchesDepartment;
+
+
+            if (shouldShow) {
+
+                row.style.display = "";
+
+                visibleCount++;
+
+            }
+            else {
+
+                row.style.display = "none";
+
+            }
+
+        }
+    );
+
+
+    resultCount.textContent =
+        `${visibleCount} Drive${
+            visibleCount !== 1
+                ? "s"
+                : ""
+        }`;
+
+
+    if (visibleCount === 0) {
+
+        emptyState.classList.add("show");
+
+    }
+    else {
+
+        emptyState.classList.remove("show");
+
+    }
+
+}
+
+
+
+// =====================================
+// SEARCH EVENTS
+// =====================================
+
+searchInput.addEventListener(
+    "input",
+    filterDrives
+);
+
+
+statusFilter.addEventListener(
+    "change",
+    filterDrives
+);
+
+
+departmentFilter.addEventListener(
+    "change",
+    filterDrives
+);
+
+
+
+// =====================================
+// CLEAR FILTERS
+// =====================================
+
+clearFilters.addEventListener(
+    "click",
+    function () {
+
+        searchInput.value = "";
+
+        statusFilter.value = "all";
+
+        departmentFilter.value = "all";
+
+        filterDrives();
+
+    }
+);
+
+
+
+// =====================================
+// CREATE DRIVE BUTTON
+// =====================================
+
+document
+    .getElementById("createDriveBtn")
+    .addEventListener(
+        "click",
+        function () {
+
+            window.location.href =
+                "professor-create-drive.html";
+
+        }
+    );
+
+
+
+// =====================================
+// VIEW BUTTON
+// =====================================
+
+function setupViewButtons() {
+
+    document
+        .querySelectorAll(".table-action")
+        .forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const row =
+                            this.closest("tr");
+
+
+                        const driveId =
+                            row.dataset.driveId;
+
+
+                        // =================================
+                        // SAVED DRIVE
+                        // =================================
+
+                        if (driveId) {
+
+                            window.location.href =
+                                "professor-placement-details.html?id=" +
+                                encodeURIComponent(
+                                    driveId
+                                );
+
+                            return;
+
+                        }
+
+
+                        // =================================
+                        // SAMPLE DRIVE
+                        // =================================
+
+                        alert(
+                            "This is a sample placement drive.\n\n" +
+                            "Detailed information for sample drives " +
+                            "will be added in the next step."
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+}
+
+
+
+// =====================================
+// LOAD SAVED DRIVES
+// =====================================
+
+loadSavedDrives();
+
+
+
+// =====================================
+// SETUP VIEW BUTTONS
+// =====================================
+
+setupViewButtons();
+
+
+
+// =====================================
+// INITIAL FILTER
+// =====================================
+
+filterDrives();
+
+</script>
+
+</body>
+
+</html>

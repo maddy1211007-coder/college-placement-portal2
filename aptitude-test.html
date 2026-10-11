@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Test | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+<link rel="stylesheet"
+    href="css/aptitude-test.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     TEST HEADER
+========================================== -->
+
+<header class="test-header">
+
+
+    <div class="test-brand">
+
+
+        <div class="test-logo">
+            CP
+        </div>
+
+
+        <div>
+
+            <strong>
+                College Placement Portal
+            </strong>
+
+            <span>
+                TCS Placement Aptitude Test
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- TIMER -->
+
+    <div class="test-timer"
+        id="testTimer">
+
+        <span>
+            ⏱
+        </span>
+
+        <strong>
+            30:00
+        </strong>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN TEST
+========================================== -->
+
+<main class="test-container">
+
+
+    <!-- =====================================
+         TEST INFO
+    ====================================== -->
+
+    <div class="test-top-info">
+
+
+        <div>
+
+            <span class="test-label">
+                APTITUDE TEST
+            </span>
+
+            <h1>
+                TCS Placement Aptitude Test
+            </h1>
+
+            <p>
+                Quantitative Aptitude · Logical Reasoning · Verbal Ability
+            </p>
+
+        </div>
+
+
+        <div class="progress-info">
+
+            <span>
+                QUESTION
+            </span>
+
+            <strong id="questionCounter">
+                1 / 10
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         PROGRESS BAR
+    ====================================== -->
+
+    <div class="test-progress">
+
+        <div
+            class="test-progress-bar"
+            id="progressBar">
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         TEST GRID
+    ====================================== -->
+
+    <div class="test-grid">
+
+
+        <!-- =================================
+             QUESTION AREA
+        ================================== -->
+
+        <section class="question-panel">
+
+
+            <div class="question-number">
+                Question <span id="questionNumber">1</span>
+            </div>
+
+
+            <h2 id="questionText">
+                Loading question...
+            </h2>
+
+
+            <div
+                class="options"
+                id="optionsContainer">
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="question-navigation">
+
+
+                <button
+                    class="previous-btn"
+                    id="previousBtn">
+
+                    ← Previous
+
+                </button>
+
+
+                <button
+                    class="next-btn"
+                    id="nextBtn">
+
+                    Next →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             QUESTION PALETTE
+        ================================== -->
+
+        <aside class="question-sidebar">
+
+
+            <div class="palette-card">
+
+
+                <div class="palette-heading">
+
+                    <h3>
+                        Questions
+                    </h3>
+
+                    <span>
+                        10 Total
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="question-palette"
+                    id="questionPalette">
+                </div>
+
+
+                <div class="palette-legend">
+
+
+                    <div>
+
+                        <span class="legend-box answered">
+                        </span>
+
+                        <span>
+                            Answered
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="legend-box current">
+                        </span>
+
+                        <span>
+                            Current
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="legend-box unanswered">
+                        </span>
+
+                        <span>
+                            Unanswered
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- TEST RULES -->
+
+            <div class="rules-card">
+
+
+                <h3>
+                    Test Rules
+                </h3>
+
+
+                <div>
+                    ✓ One correct answer per question
+                </div>
+
+                <div>
+                    ✓ +1 mark for correct answer
+                </div>
+
+                <div>
+                    ✓ No negative marking
+                </div>
+
+                <div>
+                    ✓ Test cannot be paused
+                </div>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- =====================================
+         SUBMIT
+    ====================================== -->
+
+    <div class="submit-area">
+
+
+        <div>
+
+            <strong>
+                Almost done?
+            </strong>
+
+            <span>
+                Review your answers before submitting.
+            </span>
+
+        </div>
+
+
+        <button
+            class="submit-test-btn"
+            id="submitTestBtn">
+
+            Submit Test ✓
+
+        </button>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================================
+     SUBMIT MODAL
+========================================== -->
+
+<div
+    class="submit-modal"
+    id="submitModal">
+
+
+    <div class="submit-modal-box">
+
+
+        <div class="submit-modal-icon">
+            ?
+        </div>
+
+
+        <h2>
+            Submit your test?
+        </h2>
+
+
+        <p id="answeredSummary">
+            You have answered 0 of 10 questions.
+        </p>
+
+
+        <div class="submit-warning">
+
+            Once submitted, you cannot change your answers.
+
+        </div>
+
+
+        <div class="submit-actions">
+
+
+            <button
+                class="cancel-submit"
+                id="cancelSubmit">
+
+                Continue Test
+
+            </button>
+
+
+            <button
+                class="confirm-submit"
+                id="confirmSubmit">
+
+                Submit Test
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+
+    /* =====================================
+       QUESTIONS
+    ====================================== */
+
+    const questions = [
+
+        {
+            question:
+                "What is 25% of 200?",
+
+            options:
+                ["25", "40", "50", "75"],
+
+            answer: 2
+
+        },
+
+
+        {
+            question:
+                "If a train travels 120 km in 2 hours, what is its average speed?",
+
+            options:
+                ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+
+            answer: 2
+
+        },
+
+
+        {
+            question:
+                "Find the next number: 2, 4, 8, 16, ?",
+
+            options:
+                ["20", "24", "30", "32"],
+
+            answer: 3
+
+        },
+
+
+        {
+            question:
+                "A person buys an item for ₹500 and sells it for ₹600. What is the profit percentage?",
+
+            options:
+                ["10%", "15%", "20%", "25%"],
+
+            answer: 2
+
+        },
+
+
+        {
+            question:
+                "If ALL CATS are ANIMALS and SOME ANIMALS are BLACK, which statement is definitely true?",
+
+            options:
+                [
+                    "All cats are black",
+                    "Some cats are black",
+                    "All cats are animals",
+                    "No cats are black"
+                ],
+
+            answer: 2
+
+        },
+
+
+        {
+            question:
+                "Choose the word closest in meaning to 'Rapid'.",
+
+            options:
+                [
+                    "Slow",
+                    "Quick",
+                    "Weak",
+                    "Late"
+                ],
+
+            answer: 1
+
+        },
+
+
+        {
+            question:
+                "If A = 1, B = 2, C = 3, what is the value of CAT?",
+
+            options:
+                ["22", "24", "25", "26"],
+
+            answer: 1
+
+        },
+
+
+        {
+            question:
+                "Which data structure follows the FIFO principle?",
+
+            options:
+                [
+                    "Stack",
+                    "Queue",
+                    "Tree",
+                    "Graph"
+                ],
+
+            answer: 1
+
+        },
+
+
+        {
+            question:
+                "What is the output of 10 + 5 × 2?",
+
+            options:
+                ["30", "20", "25", "15"],
+
+            answer: 1
+
+        },
+
+
+        {
+            question:
+                "Which programming language is primarily used for Android application development along with Java?",
+
+            options:
+                [
+                    "Kotlin",
+                    "HTML",
+                    "SQL",
+                    "CSS"
+                ],
+
+            answer: 0
+
+        }
+
+    ];
+
+
+
+    /* =====================================
+       VARIABLES
+    ====================================== */
+
+    let currentQuestion = 0;
+
+    let userAnswers =
+        new Array(questions.length).fill(null);
+
+
+    let totalSeconds = 30 * 60;
+
+    let timer;
+
+
+
+    /* =====================================
+       ELEMENTS
+    ====================================== */
+
+    const questionText =
+        document.getElementById("questionText");
+
+    const optionsContainer =
+        document.getElementById("optionsContainer");
+
+    const questionNumber =
+        document.getElementById("questionNumber");
+
+    const questionCounter =
+        document.getElementById("questionCounter");
+
+    const progressBar =
+        document.getElementById("progressBar");
+
+    const previousBtn =
+        document.getElementById("previousBtn");
+
+    const nextBtn =
+        document.getElementById("nextBtn");
+
+    const questionPalette =
+        document.getElementById("questionPalette");
+
+    const testTimer =
+        document.getElementById("testTimer");
+
+    const submitTestBtn =
+        document.getElementById("submitTestBtn");
+
+    const submitModal =
+        document.getElementById("submitModal");
+
+    const cancelSubmit =
+        document.getElementById("cancelSubmit");
+
+    const confirmSubmit =
+        document.getElementById("confirmSubmit");
+
+    const answeredSummary =
+        document.getElementById("answeredSummary");
+
+
+
+    /* =====================================
+       LOAD QUESTION
+    ====================================== */
+
+    function loadQuestion() {
+
+
+        const question =
+            questions[currentQuestion];
+
+
+        questionText.textContent =
+            question.question;
+
+
+        questionNumber.textContent =
+            currentQuestion + 1;
+
+
+        questionCounter.textContent =
+            `${currentQuestion + 1} / ${questions.length}`;
+
+
+        const progress =
+            ((currentQuestion + 1) /
+            questions.length) * 100;
+
+
+        progressBar.style.width =
+            progress + "%";
+
+
+        optionsContainer.innerHTML =
+            "";
+
+
+        question.options.forEach(
+            function (option, index) {
+
+
+                const label =
+                    document.createElement("label");
+
+
+                label.className =
+                    "option";
+
+
+                if (
+                    userAnswers[currentQuestion]
+                    === index
+                ) {
+
+                    label.classList.add(
+                        "selected"
+                    );
+
+                }
+
+
+                label.innerHTML = `
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="${index}"
+                        ${userAnswers[currentQuestion] === index ? "checked" : ""}>
+
+                    <span class="option-letter">
+                        ${String.fromCharCode(65 + index)}
+                    </span>
+
+                    <span class="option-text">
+                        ${option}
+                    </span>
+
+                `;
+
+
+                label.addEventListener(
+                    "click",
+                    function () {
+
+                        userAnswers[currentQuestion] =
+                            index;
+
+                        loadQuestion();
+
+                    }
+                );
+
+
+                optionsContainer.appendChild(
+                    label
+                );
+
+            }
+        );
+
+
+        previousBtn.disabled =
+            currentQuestion === 0;
+
+
+        if (
+            currentQuestion ===
+            questions.length - 1
+        ) {
+
+            nextBtn.textContent =
+                "Finish →";
+
+        } else {
+
+            nextBtn.textContent =
+                "Next →";
+
+        }
+
+
+        updatePalette();
+
+    }
+
+
+
+    /* =====================================
+       QUESTION PALETTE
+    ====================================== */
+
+    function createPalette() {
+
+
+        questionPalette.innerHTML =
+            "";
+
+
+        questions.forEach(
+            function (_, index) {
+
+
+                const button =
+                    document.createElement("button");
+
+
+                button.textContent =
+                    index + 1;
+
+
+                button.className =
+                    "palette-number";
+
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        currentQuestion =
+                            index;
+
+                        loadQuestion();
+
+                    }
+                );
+
+
+                questionPalette.appendChild(
+                    button
+                );
+
+            }
+        );
+
+
+        updatePalette();
+
+    }
+
+
+
+    function updatePalette() {
+
+
+        const buttons =
+            document.querySelectorAll(
+                ".palette-number"
+            );
+
+
+        buttons.forEach(
+            function (button, index) {
+
+
+                button.classList.remove(
+                    "answered",
+                    "current"
+                );
+
+
+                if (
+                    userAnswers[index]
+                    !== null
+                ) {
+
+                    button.classList.add(
+                        "answered"
+                    );
+
+                }
+
+
+                if (
+                    index === currentQuestion
+                ) {
+
+                    button.classList.add(
+                        "current"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+
+    /* =====================================
+       NEXT
+    ====================================== */
+
+    nextBtn.addEventListener(
+        "click",
+        function () {
+
+
+            if (
+                currentQuestion <
+                questions.length - 1
+            ) {
+
+                currentQuestion++;
+
+                loadQuestion();
+
+            } else {
+
+                openSubmitModal();
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================
+       PREVIOUS
+    ====================================== */
+
+    previousBtn.addEventListener(
+        "click",
+        function () {
+
+
+            if (currentQuestion > 0) {
+
+                currentQuestion--;
+
+                loadQuestion();
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================
+       TIMER
+    ====================================== */
+
+    function startTimer() {
+
+
+        timer =
+            setInterval(
+                function () {
+
+
+                    totalSeconds--;
+
+
+                    const minutes =
+                        Math.floor(
+                            totalSeconds / 60
+                        );
+
+
+                    const seconds =
+                        totalSeconds % 60;
+
+
+                    testTimer.querySelector(
+                        "strong"
+                    ).textContent =
+                        `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+
+
+                    if (totalSeconds <= 0) {
+
+                        clearInterval(timer);
+
+                        submitTest();
+
+                    }
+
+                },
+                1000
+            );
+
+    }
+
+
+
+    /* =====================================
+       SUBMIT MODAL
+    ====================================== */
+
+    function openSubmitModal() {
+
+
+        const answered =
+            userAnswers.filter(
+                answer =>
+                    answer !== null
+            ).length;
+
+
+        answeredSummary.textContent =
+            `You have answered ${answered} of ${questions.length} questions.`;
+
+
+        submitModal.classList.add(
+            "active"
+        );
+
+    }
+
+
+    function closeSubmitModal() {
+
+        submitModal.classList.remove(
+            "active"
+        );
+
+    }
+
+
+    submitTestBtn.addEventListener(
+        "click",
+        openSubmitModal
+    );
+
+
+    cancelSubmit.addEventListener(
+        "click",
+        closeSubmitModal
+    );
+
+
+    confirmSubmit.addEventListener(
+        "click",
+        function () {
+
+            submitTest();
+
+        }
+    );
+
+
+
+    /* =====================================
+       SUBMIT TEST
+    ====================================== */
+
+    function submitTest() {
+
+
+        clearInterval(timer);
+
+
+        let score = 0;
+
+
+        questions.forEach(
+            function (question, index) {
+
+
+                if (
+                    userAnswers[index] ===
+                    question.answer
+                ) {
+
+                    score++;
+
+                }
+
+            }
+        );
+        
+        const answered =
+            userAnswers.filter(
+                answer => answer !== null
+            ).length;
+
+        const unanswered =
+            questions.length - answered;
+
+        localStorage.setItem(
+            "aptitudeAnswered",
+            answered
+        );
+
+        localStorage.setItem(
+            "aptitudeUnanswered",
+            unanswered
+        );
+
+        localStorage.setItem(
+            "aptitudeScore",
+            score
+        );
+
+
+        localStorage.setItem(
+            "aptitudeTotal",
+            questions.length
+        );
+
+
+        window.location.href =
+            "aptitude-result.html";
+
+    }
+
+
+
+    /* =====================================
+       START
+    ====================================== */
+
+    createPalette();
+
+    loadQuestion();
+
+    startTimer();
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+```gitignore
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local editor settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# MongoDB installers and downloaded parts
+*.msi
+*.part*
+mongosh-extract.log
+mongosh-install.log
+mongosh-install-per-user.log
+
+# Local database and temporary files
+*.db
+*.sqlite
+
+```gitignore
+# Temporary project copies and local database files
+/room/
+**/mongodb-data/
+**/mongodb-extracted/
+**/mongosh-extracted/
+*.tmp

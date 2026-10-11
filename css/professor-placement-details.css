@@ -1,0 +1,912 @@
+/* =========================================
+   PLACEMENT DETAILS PAGE
+========================================= */
+
+.placement-details-content {
+
+    padding-bottom: 40px;
+
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.details-back-area {
+
+    margin-bottom: 18px;
+
+}
+
+
+.details-back-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: #176B9D;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: 0.2s ease;
+
+}
+
+
+.details-back-btn:hover {
+
+    color: #123B6D;
+
+    transform: translateX(-2px);
+
+}
+
+
+
+/* =========================================
+   DRIVE HERO
+========================================= */
+
+.drive-details-hero {
+
+    background: linear-gradient(
+        135deg,
+        #123B6D,
+        #176B9D
+    );
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px
+        rgba(18, 59, 109, 0.15);
+
+}
+
+
+.drive-company-logo {
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 14px;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.16
+    );
+
+    border: 1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.25
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 26px;
+
+    font-weight: 800;
+
+}
+
+
+.drive-hero-info {
+
+    flex: 1;
+
+}
+
+
+.details-label {
+
+    display: block;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    opacity: 0.7;
+
+    margin-bottom: 5px;
+
+}
+
+
+.drive-hero-info h1 {
+
+    margin: 0 0 5px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+}
+
+
+.drive-hero-info p {
+
+    margin: 0;
+
+    font-size: 10px;
+
+    opacity: 0.8;
+
+}
+
+
+.drive-hero-status {
+
+    min-width: 125px;
+
+    text-align: right;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 4px;
+
+}
+
+
+.drive-hero-status small {
+
+    margin-top: 8px;
+
+    font-size: 8px;
+
+    opacity: 0.65;
+
+}
+
+
+.drive-hero-status strong {
+
+    font-size: 9px;
+
+    opacity: 0.9;
+
+}
+
+
+
+/* =========================================
+   QUICK INFORMATION
+========================================= */
+
+.drive-quick-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+}
+
+
+.quick-info-card {
+
+    background: white;
+
+    border: 1px solid #E7EEF5;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(18, 59, 109, 0.04);
+
+}
+
+
+.quick-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 9px;
+
+    background: #EAF6FE;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+}
+
+
+.quick-info-card small {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+
+    color: #8A99A8;
+
+    margin-bottom: 4px;
+
+}
+
+
+.quick-info-card strong {
+
+    display: block;
+
+    font-size: 10px;
+
+    color: #123B6D;
+
+}
+
+
+
+/* =========================================
+   DETAILS GRID
+========================================= */
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(260px, 0.8fr);
+
+    gap: 15px;
+
+    margin-top: 15px;
+
+}
+
+
+.details-main-column,
+.details-side-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+
+/* =========================================
+   DETAILS CARD
+========================================= */
+
+.details-card {
+
+    background: white;
+
+    border: 1px solid #E7EEF5;
+
+    border-radius: 13px;
+
+    padding: 19px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(18, 59, 109, 0.04);
+
+}
+
+
+.details-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 13px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #EDF2F6;
+
+}
+
+
+.details-card-header span {
+
+    display: block;
+
+    color: #176B9D;
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.9px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.details-card-header h2 {
+
+    margin: 0;
+
+    color: #123B6D;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+}
+
+
+
+/* =========================================
+   INFORMATION GRID
+========================================= */
+
+.details-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.details-info-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.details-info-item span {
+
+    font-size: 8px;
+
+    color: #8998A8;
+
+    font-weight: 600;
+
+}
+
+
+.details-info-item strong {
+
+    font-size: 10px;
+
+    color: #263B50;
+
+}
+
+
+.details-info-item a {
+
+    color: #176B9D;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.details-info-item a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =========================================
+   TEXT SECTIONS
+========================================= */
+
+.details-text-section {
+
+    margin-top: 18px;
+
+}
+
+
+.details-text-section > span {
+
+    display: block;
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    color: #8998A8;
+
+    margin-bottom: 7px;
+
+}
+
+
+.details-text-section p {
+
+    margin: 0;
+
+    color: #526579;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   ELIGIBILITY
+========================================= */
+
+.eligibility-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+}
+
+
+.eligibility-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 11px;
+
+    border-bottom: 1px solid #F0F3F6;
+
+}
+
+
+.eligibility-item:last-child {
+
+    border-bottom: none;
+
+    padding-bottom: 0;
+
+}
+
+
+.eligibility-item > span {
+
+    font-size: 8px;
+
+    color: #8998A8;
+
+    font-weight: 600;
+
+}
+
+
+.eligibility-item > strong {
+
+    font-size: 9px;
+
+    color: #263B50;
+
+    text-align: right;
+
+}
+
+
+.department-badges {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 5px;
+
+}
+
+
+.department-badges span {
+
+    background: #EAF6FE;
+
+    color: #176B9D;
+
+    padding: 4px 7px;
+
+    border-radius: 5px;
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+}
+
+
+
+/* =========================================
+   SCHEDULE
+========================================= */
+
+.schedule-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.schedule-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.schedule-icon {
+
+    width: 31px;
+
+    height: 31px;
+
+    border-radius: 8px;
+
+    background: #EAF6FE;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 13px;
+
+}
+
+
+.schedule-item small {
+
+    display: block;
+
+    font-size: 7px;
+
+    color: #8998A8;
+
+    margin-bottom: 3px;
+
+}
+
+
+.schedule-item strong {
+
+    display: block;
+
+    font-size: 9px;
+
+    color: #263B50;
+
+}
+
+
+
+/* =========================================
+   APPLICATIONS
+========================================= */
+
+.application-summary {
+
+    text-align: center;
+
+    padding: 8px 0 15px;
+
+}
+
+
+.application-summary strong {
+
+    display: block;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: #123B6D;
+
+}
+
+
+.application-summary span {
+
+    font-size: 8px;
+
+    color: #8998A8;
+
+}
+
+
+.view-applications-btn {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 9px;
+
+    background: #EAF6FE;
+
+    color: #176B9D;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.view-applications-btn:hover {
+
+    background: #DCEFFC;
+
+}
+
+
+
+/* =========================================
+   SELECTION PROCESS
+========================================= */
+
+.selection-process {
+
+    margin: 0;
+
+    color: #526579;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================
+   INSTRUCTIONS
+========================================= */
+
+.instructions-card {
+
+    margin-top: 15px;
+
+}
+
+
+.instructions-card > p {
+
+    margin: 0;
+
+    color: #526579;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    white-space: pre-line;
+
+}
+
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.drive-hero-status .table-status {
+
+    display: inline-flex;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .drive-quick-info {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .drive-details-hero {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+    }
+
+
+    .drive-hero-status {
+
+        width: 100%;
+
+        align-items: flex-start;
+
+        text-align: left;
+
+    }
+
+
+    .drive-quick-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .details-info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .eligibility-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+
+    .eligibility-item > strong {
+
+        text-align: left;
+
+    }
+
+
+    .department-badges {
+
+        justify-content: flex-start;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .drive-hero-info h1 {
+
+        font-size: 20px;
+
+    }
+
+
+    .drive-company-logo {
+
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 22px;
+
+    }
+
+
+    .details-card {
+
+        padding: 15px;
+
+    }
+
+}

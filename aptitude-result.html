@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Aptitude Test Result - College Placement Portal">
+
+<title>Test Result | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Result CSS -->
+
+<link rel="stylesheet"
+    href="css/aptitude-result.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     HEADER
+========================================== -->
+
+<header class="result-header">
+
+
+    <a href="student-dashboard.html"
+        class="result-brand">
+
+
+        <div class="result-logo">
+            CP
+        </div>
+
+
+        <div>
+
+            <strong>
+                College Placement Portal
+            </strong>
+
+            <span>
+                Student Portal
+            </span>
+
+        </div>
+
+
+    </a>
+
+
+    <a href="aptitude-tests.html"
+        class="back-tests">
+
+        ← Aptitude Tests
+
+    </a>
+
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================== -->
+
+<main class="result-container">
+
+
+    <!-- =====================================
+         SUCCESS HEADER
+    ====================================== -->
+
+    <section class="result-hero">
+
+
+        <div class="result-success-icon">
+            ✓
+        </div>
+
+
+        <span class="result-label">
+            TEST COMPLETED
+        </span>
+
+
+        <h1>
+            Your test has been submitted!
+        </h1>
+
+
+        <p>
+            Your aptitude test has been evaluated automatically.
+            Here's your performance summary.
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         TEST NAME
+    ====================================== -->
+
+    <div class="result-test-name">
+
+        <div class="company-result-logo">
+            T
+        </div>
+
+
+        <div>
+
+            <strong>
+                TCS Placement Aptitude Test
+            </strong>
+
+            <span>
+                Tata Consultancy Services · Campus Placement
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         SCORE AREA
+    ====================================== -->
+
+    <section class="score-section">
+
+
+        <!-- SCORE CIRCLE -->
+
+        <div class="score-circle-wrapper">
+
+
+            <div class="score-circle">
+
+                <div>
+
+                    <strong id="percentage">
+                        0%
+                    </strong>
+
+                    <span>
+                        SCORE
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="result-status"
+                id="resultStatus">
+
+                Calculating...
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SCORE DETAILS -->
+
+        <div class="score-details">
+
+
+            <div class="score-detail">
+
+                <span class="score-detail-icon correct">
+                    ✓
+                </span>
+
+                <div>
+
+                    <strong id="correctAnswers">
+                        0
+                    </strong>
+
+                    <span>
+                        Correct Answers
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="score-detail">
+
+                <span class="score-detail-icon wrong">
+                    ×
+                </span>
+
+                <div>
+
+                    <strong id="wrongAnswers">
+                        0
+                    </strong>
+
+                    <span>
+                        Wrong Answers
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="score-detail">
+
+                <span class="score-detail-icon unanswered">
+                    —
+                </span>
+
+                <div>
+
+                    <strong id="unanswered">
+                        0
+                    </strong>
+
+                    <span>
+                        Unanswered
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="score-detail">
+
+                <span class="score-detail-icon time">
+                    ⏱
+                </span>
+
+                <div>
+
+                    <strong>
+                        30 min
+                    </strong>
+
+                    <span>
+                        Test Duration
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PERFORMANCE
+    ====================================== -->
+
+    <section class="performance-card">
+
+
+        <div class="performance-header">
+
+            <div>
+
+                <span>
+                    PERFORMANCE
+                </span>
+
+                <h2>
+                    Your Test Performance
+                </h2>
+
+            </div>
+
+            <strong id="performancePercentage">
+                0%
+            </strong>
+
+        </div>
+
+
+        <div class="performance-bar">
+
+            <div
+                class="performance-progress"
+                id="performanceProgress">
+            </div>
+
+        </div>
+
+
+        <div class="performance-message"
+            id="performanceMessage">
+
+            Keep practicing to improve your score.
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         RESULT INFORMATION
+    ====================================== -->
+
+    <section class="result-info-grid">
+
+
+        <div class="result-info-card">
+
+            <span>
+                TEST
+            </span>
+
+            <strong>
+                TCS Aptitude Test
+            </strong>
+
+        </div>
+
+
+        <div class="result-info-card">
+
+            <span>
+                QUESTIONS
+            </span>
+
+            <strong>
+                10
+            </strong>
+
+        </div>
+
+
+        <div class="result-info-card">
+
+            <span>
+                MARKING
+            </span>
+
+            <strong>
+                +1 / Correct
+            </strong>
+
+        </div>
+
+
+        <div class="result-info-card">
+
+            <span>
+                NEGATIVE MARKING
+            </span>
+
+            <strong>
+                None
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ACTIONS
+    ====================================== -->
+
+    <div class="result-actions">
+
+
+        <a href="aptitude-tests.html"
+            class="primary-result-btn">
+
+            ← Back to Aptitude Tests
+
+        </a>
+
+
+        <a href="my-applications.html"
+            class="secondary-result-btn">
+
+            View My Applications →
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================
+         NOTE
+    ====================================== -->
+
+    <div class="result-note">
+
+        <span>
+            ℹ
+        </span>
+
+        <p>
+            Your result has been recorded for this
+            placement activity. The Placement Cell
+            may use this score during the candidate
+            shortlisting process.
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+
+    /* =====================================
+       GET RESULT
+    ====================================== */
+
+    const score =
+        parseInt(
+            localStorage.getItem("aptitudeScore")
+        ) || 0;
+
+
+    const total =
+        parseInt(
+            localStorage.getItem("aptitudeTotal")
+        ) || 10;
+
+
+    const percentage =
+        Math.round(
+            (score / total) * 100
+        );
+
+
+    const wrong =
+        total - score - unanswered;
+
+
+    const unanswered =
+        parseInt(
+            localStorage.getItem("aptitudeUnanswered")
+        ) || 0;
+
+
+
+    /* =====================================
+       DISPLAY
+    ====================================== */
+
+    document.getElementById(
+        "percentage"
+    ).textContent =
+        percentage + "%";
+
+
+    document.getElementById(
+        "performancePercentage"
+    ).textContent =
+        percentage + "%";
+
+
+    document.getElementById(
+        "correctAnswers"
+    ).textContent =
+        score;
+
+
+    document.getElementById(
+        "wrongAnswers"
+    ).textContent =
+        wrong;
+
+
+    document.getElementById(
+        "unanswered"
+    ).textContent =
+        unanswered;
+
+
+    document.getElementById(
+        "performanceProgress"
+    ).style.width =
+        percentage + "%";
+
+
+
+    /* =====================================
+       RESULT STATUS
+    ====================================== */
+
+    const resultStatus =
+        document.getElementById(
+            "resultStatus"
+        );
+
+
+    const performanceMessage =
+        document.getElementById(
+            "performanceMessage"
+        );
+
+
+    if (percentage >= 70) {
+
+
+        resultStatus.textContent =
+            "Good Performance ✓";
+
+
+        resultStatus.classList.add(
+            "pass"
+        );
+
+
+        performanceMessage.textContent =
+            "Excellent work! Your score shows strong placement readiness.";
+
+    }
+
+
+    else if (percentage >= 50) {
+
+
+        resultStatus.textContent =
+            "Passed ✓";
+
+
+        resultStatus.classList.add(
+            "pass"
+        );
+
+
+        performanceMessage.textContent =
+            "Good job! Keep practicing to improve your placement performance.";
+
+    }
+
+
+    else {
+
+
+        resultStatus.textContent =
+            "Needs Improvement";
+
+
+        resultStatus.classList.add(
+            "improve"
+        );
+
+
+        performanceMessage.textContent =
+            "Keep practicing and attempt more aptitude questions before your next placement test.";
+
+    }
+
+
+</script>
+
+</body>
+
+</html>

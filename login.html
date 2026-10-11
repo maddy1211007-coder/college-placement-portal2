@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Login to the College Placement Portal.">
+
+<title>Login | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Login CSS -->
+
+<link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+<!-- =================================
+     LOGIN PAGE
+================================== -->
+
+<main class="login-page">
+
+
+    <!-- LEFT SIDE -->
+
+    <section class="login-intro">
+
+        <div class="intro-content">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="login-logo">
+
+                <div class="logo-icon">
+                    CP
+                </div>
+
+                <div class="logo-text">
+                    <span>College</span>
+                    Placement
+                </div>
+
+            </a>
+
+
+            <!-- Main Message -->
+
+            <div class="intro-message">
+
+                <span class="section-label">
+                    COLLEGE PLACEMENT PORTAL
+                </span>
+
+                <h1>
+                    Your career journey
+                    starts here.
+                </h1>
+
+                <p>
+                    Access placement opportunities,
+                    manage your profile and stay updated
+                    with your college placement activities.
+                </p>
+
+            </div>
+
+
+            <!-- Features -->
+
+            <div class="intro-features">
+
+                <div class="intro-feature">
+
+                    <span class="feature-check">
+                        ✓
+                    </span>
+
+                    <span>
+                        Manage placement opportunities
+                    </span>
+
+                </div>
+
+
+                <div class="intro-feature">
+
+                    <span class="feature-check">
+                        ✓
+                    </span>
+
+                    <span>
+                        Track applications and drives
+                    </span>
+
+                </div>
+
+
+                <div class="intro-feature">
+
+                    <span class="feature-check">
+                        ✓
+                    </span>
+
+                    <span>
+                        Prepare for aptitude tests
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Decorative Shape -->
+
+        <div class="intro-decoration"></div>
+
+    </section>
+
+
+
+    <!-- =================================
+         RIGHT SIDE
+    ================================== -->
+
+    <section class="login-section">
+
+
+        <div class="login-card">
+
+
+            <!-- Header -->
+
+            <div class="login-header">
+
+                <span class="login-welcome">
+                    Welcome back
+                </span>
+
+                <h2>
+                    Sign in to your account
+                </h2>
+
+                <p>
+                    Select your portal and enter your credentials.
+                </p>
+
+            </div>
+
+
+            <!-- User Type -->
+
+            <div class="user-type">
+
+                <button
+                    type="button"
+                    class="user-type-btn active"
+                    data-type="student"
+                    id="studentBtn">
+
+                    <span class="user-icon">
+                        👨‍🎓
+                    </span>
+
+                    <span>
+                        Student
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="user-type-btn"
+                    data-type="professor"
+                    id="professorBtn">
+
+                    <span class="user-icon">
+                        👨‍🏫
+                    </span>
+
+                    <span>
+                        Professor
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Login Form -->
+
+            <form class="login-form" id="loginForm">
+
+
+                <!-- Register / Faculty ID -->
+
+                <div class="form-group">
+
+                    <label for="userId" id="userIdLabel">
+                        Register Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="userId"
+                        placeholder="Enter your register number"
+                        required>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required>
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-toggle">
+
+                            Show
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remember -->
+
+                <div class="form-options">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember">
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    <span id="loginButtonText">
+                        Login as Student
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </form>
+
+
+            <!-- Divider -->
+
+            <div class="login-divider">
+
+                <span>
+                    New to the portal?
+                </span>
+
+            </div>
+
+
+            <!-- Registration -->
+
+            <a href="register.html" class="register-link">
+
+                Register for an account
+
+            </a>
+
+
+            <!-- Security -->
+
+            <div class="security-note">
+
+                🔒 Your account information is protected.
+
+            </div>
+
+        </div>
+
+
+        <!-- Back -->
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </section>
+
+</main>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const studentBtn = document.getElementById("studentBtn");
+    const professorBtn = document.getElementById("professorBtn");
+
+    const userIdLabel = document.getElementById("userIdLabel");
+    const userIdInput = document.getElementById("userId");
+
+    const loginButtonText =
+        document.getElementById("loginButtonText");
+
+    const passwordInput =
+        document.getElementById("password");
+
+    const togglePassword =
+        document.getElementById("togglePassword");
+
+    const loginForm =
+        document.getElementById("loginForm");
+
+
+    // =====================================
+    // STUDENT
+    // =====================================
+
+    studentBtn.addEventListener("click", function () {
+
+        studentBtn.classList.add("active");
+
+        professorBtn.classList.remove("active");
+
+        userIdLabel.textContent =
+            "Register Number";
+
+        userIdInput.placeholder =
+            "Enter your register number";
+
+        loginButtonText.textContent =
+            "Login as Student";
+
+    });
+
+
+    // =====================================
+    // PROFESSOR
+    // =====================================
+
+    professorBtn.addEventListener("click", function () {
+
+        professorBtn.classList.add("active");
+
+        studentBtn.classList.remove("active");
+
+        userIdLabel.textContent =
+            "Faculty ID";
+
+        userIdInput.placeholder =
+            "Enter your faculty ID";
+
+        loginButtonText.textContent =
+            "Login as Professor";
+
+    });
+
+
+    // =====================================
+    // PASSWORD SHOW / HIDE
+    // =====================================
+
+    togglePassword.addEventListener("click", function () {
+
+        if (passwordInput.type === "password") {
+
+            passwordInput.type = "text";
+
+            togglePassword.textContent =
+                "Hide";
+
+        } else {
+
+            passwordInput.type = "password";
+
+            togglePassword.textContent =
+                "Show";
+
+        }
+
+    });
+
+// =====================================
+// LOGIN VALIDATION
+// =====================================
+
+loginForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const loginId =
+        userIdInput.value.trim();
+
+    const password =
+        passwordInput.value;
+
+    const isProfessor =
+        professorBtn.classList.contains("active");
+
+
+    // =====================================
+    // LOGIN ID REQUIRED
+    // =====================================
+
+    if (loginId === "") {
+
+        if (isProfessor) {
+            alert("Please enter your Faculty ID.");
+        } else {
+            alert("Please enter your Register Number.");
+        }
+
+        userIdInput.focus();
+        return;
+    }
+
+
+    // =====================================
+    // STUDENT VALIDATION
+    // =====================================
+
+    if (!isProfessor) {
+
+        if (!/^[A-Za-z0-9]+$/.test(loginId)) {
+
+            alert(
+                "Register Number can contain only letters and numbers."
+            );
+
+            userIdInput.focus();
+            return;
+        }
+
+        if (loginId.length < 3) {
+
+            alert(
+                "Please enter a valid Register Number."
+            );
+
+            userIdInput.focus();
+            return;
+        }
+    }
+
+
+    // =====================================
+    // PROFESSOR VALIDATION
+    // =====================================
+
+    if (isProfessor) {
+
+        if (!/^[A-Za-z0-9-]+$/.test(loginId)) {
+
+            alert(
+                "Faculty ID can contain only letters, numbers and hyphens."
+            );
+
+            userIdInput.focus();
+            return;
+        }
+
+        if (loginId.length < 3) {
+
+            alert(
+                "Please enter a valid Faculty ID."
+            );
+
+            userIdInput.focus();
+            return;
+        }
+    }
+
+
+    // =====================================
+    // PASSWORD VALIDATION
+    // =====================================
+
+    if (password === "") {
+
+        alert("Please enter your password.");
+
+        passwordInput.focus();
+        return;
+    }
+
+
+    if (password.length < 6) {
+
+        alert(
+            "Password must contain at least 6 characters."
+        );
+
+        passwordInput.focus();
+        return;
+    }
+
+
+    // =====================================
+    // LOGIN VALIDATION SUCCESS
+    // =====================================
+
+    if (isProfessor) {
+
+        window.location.href =
+            "professor-dashboard.html";
+
+    } else {
+
+        window.location.href =
+            "student-dashboard.html";
+
+    }
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>

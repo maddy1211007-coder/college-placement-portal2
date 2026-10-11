@@ -1,0 +1,426 @@
+/* =========================================
+COLLEGE PLACEMENT PORTAL
+STUDENT REGISTRATION
+NAVY + SKY BLUE THEME
+========================================= */
+
+/* =========================================
+PAGE
+========================================= */
+
+.register-page {
+min-height: 100vh;
+background: #F5F8FC;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.register-header {
+height: 76px;
+background: #FFFFFF;
+border-bottom: 1px solid #E4EBF3;
+}
+
+.register-header-inner {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.already-account {
+display: flex;
+align-items: center;
+gap: 8px;
+color: #7A8799;
+font-size: 12px;
+}
+
+.already-account a {
+color: #176B9D;
+font-weight: 700;
+}
+
+.already-account a:hover {
+color: #123B6D;
+}
+
+/* =========================================
+MAIN SECTION
+========================================= */
+
+.register-section {
+padding: 55px 0 80px;
+}
+
+.register-container {
+width: min(920px, 92%);
+margin: auto;
+}
+
+/* =========================================
+HEADING
+========================================= */
+
+.register-heading {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.register-heading h1 {
+color: #123B6D;
+font-size: 34px;
+letter-spacing: -0.8px;
+margin-top: 7px;
+}
+
+.register-heading p {
+color: #748196;
+font-size: 13px;
+margin-top: 8px;
+}
+
+/* =========================================
+PROGRESS
+========================================= */
+
+.registration-progress {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 35px;
+}
+
+.progress-step {
+display: flex;
+align-items: center;
+gap: 7px;
+color: #9AA6B5;
+font-size: 10px;
+font-weight: 600;
+}
+
+.step-number {
+width: 27px;
+height: 27px;
+border-radius: 50%;
+border: 1px solid #D8E1EB;
+background: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 10px;
+}
+
+.progress-step.active {
+color: #123B6D;
+}
+
+.progress-step.active .step-number {
+background: #123B6D;
+border-color: #123B6D;
+color: #FFFFFF;
+}
+
+.progress-line {
+width: 55px;
+height: 1px;
+background: #DCE4ED;
+margin: 0 10px;
+}
+
+/* =========================================
+FORM
+========================================= */
+
+.registration-form {
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+/* =========================================
+FORM SECTION
+========================================= */
+
+.form-section {
+background: #FFFFFF;
+border: 1px solid #E1E8F0;
+border-radius: 14px;
+padding: 28px;
+}
+
+.form-section-heading {
+display: flex;
+align-items: flex-start;
+gap: 13px;
+padding-bottom: 20px;
+border-bottom: 1px solid #EDF1F5;
+margin-bottom: 22px;
+}
+
+.section-number {
+width: 32px;
+height: 32px;
+border-radius: 8px;
+background: #EAF6FE;
+color: #176B9D;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 10px;
+font-weight: 800;
+}
+
+.form-section-heading h2 {
+color: #193C63;
+font-size: 17px;
+}
+
+.form-section-heading p {
+color: #8995A5;
+font-size: 11px;
+margin-top: 2px;
+}
+
+/* =========================================
+FORM GRID
+========================================= */
+
+.form-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 19px 18px;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+}
+
+.form-group.full-width {
+grid-column: 1 / -1;
+}
+
+.form-group label {
+color: #35445A;
+font-size: 11px;
+font-weight: 600;
+margin-bottom: 7px;
+}
+
+.form-group label span {
+color: #E05252;
+}
+
+.form-group input,
+.form-group select {
+width: 100%;
+height: 43px;
+border: 1px solid #D9E2EC;
+border-radius: 8px;
+background: #FFFFFF;
+padding: 0 12px;
+color: #26364D;
+outline: none;
+font-family: inherit;
+font-size: 11px;
+transition: 0.2s ease;
+}
+
+.form-group select {
+cursor: pointer;
+}
+
+.form-group input::placeholder {
+color: #A4AFBD;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+border-color: #38BDF8;
+box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.09);
+}
+
+.form-group small {
+color: #9AA5B4;
+font-size: 9px;
+margin-top: 5px;
+}
+
+/* =========================================
+TERMS
+========================================= */
+
+.terms {
+display: flex;
+align-items: flex-start;
+gap: 8px;
+margin-top: 23px;
+color: #748196;
+font-size: 10px;
+cursor: pointer;
+}
+
+.terms input {
+margin-top: 2px;
+accent-color: #123B6D;
+}
+
+/* =========================================
+ACTIONS
+========================================= */
+
+.form-actions {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 12px;
+margin-top: 5px;
+}
+
+.cancel-btn {
+height: 44px;
+padding: 0 20px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #D6E0EA;
+border-radius: 8px;
+color: #637187;
+background: #FFFFFF;
+font-size: 11px;
+font-weight: 600;
+}
+
+.cancel-btn:hover {
+border-color: #B9C9D9;
+color: #123B6D;
+}
+
+.submit-btn {
+height: 44px;
+padding: 0 22px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+border: none;
+border-radius: 8px;
+background: #123B6D;
+color: #FFFFFF;
+font-family: inherit;
+font-size: 11px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.25s ease;
+}
+
+.submit-btn:hover {
+background: #0D315A;
+transform: translateY(-1px);
+}
+
+.submit-btn span {
+font-size: 14px;
+}
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+
+.register-header {
+    height: 68px;
+}
+
+
+.already-account span {
+    display: none;
+}
+
+
+.register-section {
+    padding: 40px 0 60px;
+}
+
+
+.register-heading h1 {
+    font-size: 28px;
+}
+
+
+.registration-progress {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+
+.progress-step span {
+    display: none;
+}
+
+
+.progress-line {
+    width: 35px;
+    margin: 0 7px;
+}
+
+
+.form-section {
+    padding: 21px;
+}
+
+
+.form-grid {
+    grid-template-columns: 1fr;
+}
+
+
+.form-group.full-width {
+    grid-column: auto;
+}
+
+
+.form-actions {
+    flex-direction: column-reverse;
+}
+
+
+.cancel-btn,
+.submit-btn {
+    width: 100%;
+}
+
+
+}
+
+@media (max-width: 450px) {
+
+
+.register-container {
+    width: 94%;
+}
+
+
+.register-heading h1 {
+    font-size: 24px;
+}
+
+
+.register-heading p {
+    font-size: 11px;
+}
+
+
+.form-section {
+    padding: 17px;
+}
+
+
+}

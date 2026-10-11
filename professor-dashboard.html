@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Professor Dashboard - College Placement Portal">
+
+<title>Professor Dashboard | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Professor Dashboard CSS -->
+
+<link rel="stylesheet"
+    href="css/professor-dashboard.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     PROFESSOR DASHBOARD
+========================================== -->
+
+<div class="professor-layout">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside
+        class="professor-sidebar"
+        id="professorSidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="professor-logo-area">
+
+            <a href="index.html"
+                class="professor-logo">
+
+                <div class="professor-logo-icon">
+                    CP
+                </div>
+
+                <div class="professor-logo-text">
+
+                    <span>
+                        College
+                    </span>
+
+                    Placement
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="professor-nav">
+
+
+            <div class="professor-nav-section">
+
+
+                <span class="professor-nav-title">
+                    PLACEMENT MANAGEMENT
+                </span>
+
+
+                <a
+                    href="professor-dashboard.html"
+                    class="professor-nav-link active">
+
+                    <span class="professor-nav-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="professor-placement-drives.html"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        🏢
+                    </span>
+
+                    <span>
+                        Placement Drives
+                    </span>
+
+                    <span class="nav-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        👨‍🎓
+                    </span>
+
+                    <span>
+                        Students
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        📋
+                    </span>
+
+                    <span>
+                        Applications
+                    </span>
+
+                    <span class="nav-count">
+                        12
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        🧠
+                    </span>
+
+                    <span>
+                        Aptitude Tests
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="professor-nav-section">
+
+
+                <span class="professor-nav-title">
+                    REPORTS
+                </span>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        📊
+                    </span>
+
+                    <span>
+                        Placement Analytics
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        📄
+                    </span>
+
+                    <span>
+                        Reports
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="professor-nav-section">
+
+
+                <span class="professor-nav-title">
+                    ACCOUNT
+                </span>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        🔔
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="nav-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="professor-nav-link">
+
+                    <span class="professor-nav-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="professor-sidebar-bottom">
+
+
+            <div class="professor-help">
+
+                <span class="professor-help-icon">
+                    ?
+                </span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <span>
+                        Placement Cell Support
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="login.html"
+                class="professor-logout">
+
+                <span>
+                    ↪
+                </span>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN
+    ====================================== -->
+
+    <main class="professor-main">
+
+
+        <!-- =================================
+             TOPBAR
+        ================================== -->
+
+        <header class="professor-topbar">
+
+
+            <button
+                class="professor-mobile-menu"
+                id="professorMobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="professor-page-title">
+
+                <span>
+                    PLACEMENT CELL
+                </span>
+
+                <strong>
+                    Professor Portal
+                </strong>
+
+            </div>
+
+
+            <div class="professor-topbar-right">
+
+
+                <button
+                    class="professor-notification">
+
+                    🔔
+
+                    <span></span>
+
+                </button>
+
+
+                <div class="professor-profile-mini">
+
+
+                    <div class="professor-avatar">
+                        DR
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Dr. Professor Name
+                        </strong>
+
+                        <span>
+                            Placement Coordinator
+                        </span>
+
+                    </div>
+
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             CONTENT
+        ================================== -->
+
+        <div class="professor-content">
+
+
+            <!-- WELCOME -->
+
+            <section class="professor-welcome">
+
+
+                <div>
+
+                    <span>
+                        PROFESSOR PORTAL
+                    </span>
+
+                    <h1>
+                        Good morning, Professor 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening with
+                        your college placement activities.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="create-drive-btn"
+                    onclick="window.location.href='professor-placement-drives.html'">
+
+                    + Create Placement Drive
+
+                </button>
+
+            </section>
+
+
+
+            <!-- =================================
+                 STATISTICS
+            ================================== -->
+
+            <section class="professor-stats">
+
+
+                <div class="professor-stat-card">
+
+
+                    <div class="professor-stat-icon blue">
+                        🏢
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TOTAL DRIVES
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+
+                        <small>
+                            This academic year
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="professor-stat-card">
+
+
+                    <div class="professor-stat-icon purple">
+                        📅
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            UPCOMING DRIVES
+                        </span>
+
+                        <strong>
+                            08
+                        </strong>
+
+                        <small>
+                            Next 30 days
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="professor-stat-card">
+
+
+                    <div class="professor-stat-icon green">
+                        👨‍🎓
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            STUDENTS
+                        </span>
+
+                        <strong>
+                            156
+                        </strong>
+
+                        <small>
+                            Registered students
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="professor-stat-card">
+
+
+                    <div class="professor-stat-icon orange">
+                        📋
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            APPLICATIONS
+                        </span>
+
+                        <strong>
+                            342
+                        </strong>
+
+                        <small>
+                            Total applications
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 TWO COLUMN
+            ================================== -->
+
+            <section class="professor-two-column">
+
+
+                <!-- UPCOMING DRIVES -->
+
+                <div class="professor-panel">
+
+
+                    <div class="panel-header">
+
+
+                        <div>
+
+                            <span>
+                                PLACEMENT SCHEDULE
+                            </span>
+
+                            <h2>
+                                Upcoming Drives
+                            </h2>
+
+                        </div>
+
+
+                        <a href="#">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- DRIVE -->
+
+                    <div class="drive-row">
+
+
+                        <div class="company-mini-logo">
+                            T
+                        </div>
+
+
+                        <div class="drive-info">
+
+                            <strong>
+                                Graduate Software Engineer
+                            </strong>
+
+                            <span>
+                                Tata Consultancy Services
+                            </span>
+
+                        </div>
+
+
+                        <div class="drive-date">
+
+                            <span>
+                                DRIVE
+                            </span>
+
+                            <strong>
+                                Sep 05
+                            </strong>
+
+                        </div>
+
+
+                        <span class="drive-status open">
+                            Open
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="drive-row">
+
+
+                        <div class="company-mini-logo accenture">
+                            A
+                        </div>
+
+
+                        <div class="drive-info">
+
+                            <strong>
+                                Associate Software Engineer
+                            </strong>
+
+                            <span>
+                                Accenture
+                            </span>
+
+                        </div>
+
+
+                        <div class="drive-date">
+
+                            <span>
+                                DRIVE
+                            </span>
+
+                            <strong>
+                                Sep 20
+                            </strong>
+
+                        </div>
+
+
+                        <span class="drive-status open">
+                            Open
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="drive-row">
+
+
+                        <div class="company-mini-logo wipro">
+                            W
+                        </div>
+
+
+                        <div class="drive-info">
+
+                            <strong>
+                                Project Engineer
+                            </strong>
+
+                            <span>
+                                Wipro
+                            </span>
+
+                        </div>
+
+
+                        <div class="drive-date">
+
+                            <span>
+                                DRIVE
+                            </span>
+
+                            <strong>
+                                Sep 24
+                            </strong>
+
+                        </div>
+
+
+                        <span class="drive-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="drive-row">
+
+
+                        <div class="company-mini-logo zoho">
+                            Z
+                        </div>
+
+
+                        <div class="drive-info">
+
+                            <strong>
+                                Software Developer
+                            </strong>
+
+                            <span>
+                                Zoho Corporation
+                            </span>
+
+                        </div>
+
+
+                        <div class="drive-date">
+
+                            <span>
+                                DRIVE
+                            </span>
+
+                            <strong>
+                                Oct 02
+                            </strong>
+
+                        </div>
+
+
+                        <span class="drive-status upcoming">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RECENT APPLICATIONS -->
+
+                <div class="professor-panel">
+
+
+                    <div class="panel-header">
+
+
+                        <div>
+
+                            <span>
+                                RECENT ACTIVITY
+                            </span>
+
+                            <h2>
+                                Recent Applications
+                            </h2>
+
+                        </div>
+
+
+                        <a href="#">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- APPLICATION -->
+
+                    <div class="application-row">
+
+
+                        <div class="student-mini-avatar">
+                            AK
+                        </div>
+
+
+                        <div class="application-info">
+
+                            <strong>
+                                Arun Kumar
+                            </strong>
+
+                            <span>
+                                TCS · Software Engineer
+                            </span>
+
+                        </div>
+
+
+                        <span class="application-status shortlisted">
+                            Shortlisted
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="application-row">
+
+
+                        <div class="student-mini-avatar">
+                            PS
+                        </div>
+
+
+                        <div class="application-info">
+
+                            <strong>
+                                Priya S
+                            </strong>
+
+                            <span>
+                                Accenture · ASE
+                            </span>
+
+                        </div>
+
+
+                        <span class="application-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="application-row">
+
+
+                        <div class="student-mini-avatar">
+                            RM
+                        </div>
+
+
+                        <div class="application-info">
+
+                            <strong>
+                                Rahul M
+                            </strong>
+
+                            <span>
+                                Wipro · Project Engineer
+                            </span>
+
+                        </div>
+
+
+                        <span class="application-status shortlisted">
+                            Shortlisted
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="application-row">
+
+
+                        <div class="student-mini-avatar">
+                            VK
+                        </div>
+
+
+                        <div class="application-info">
+
+                            <strong>
+                                Varun Kumar
+                            </strong>
+
+                            <span>
+                                TCS · Software Engineer
+                            </span>
+
+                        </div>
+
+
+                        <span class="application-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ACTIVITY + QUICK ACTIONS
+            ================================== -->
+
+            <section class="professor-bottom-grid">
+
+
+                <!-- PLACEMENT ACTIVITY -->
+
+                <div class="professor-panel activity-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                PLACEMENT OVERVIEW
+                            </span>
+
+                            <h2>
+                                Application Activity
+                            </h2>
+
+                        </div>
+
+                        <select
+                            id="activityFilter">
+
+                            <option>
+                                Last 6 Months
+                            </option>
+
+                            <option>
+                                This Academic Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="activity-chart">
+
+
+                        <div class="chart-y-axis">
+
+                            <span>100</span>
+                            <span>75</span>
+                            <span>50</span>
+                            <span>25</span>
+                            <span>0</span>
+
+                        </div>
+
+
+                        <div class="chart-area">
+
+
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+
+
+                            <div class="chart-bars">
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 72%;">
+                                    </div>
+
+                                    <span>
+                                        Mar
+                                    </span>
+
+                                </div>
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 54%;">
+                                    </div>
+
+                                    <span>
+                                        Apr
+                                    </span>
+
+                                </div>
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 68%;">
+                                    </div>
+
+                                    <span>
+                                        May
+                                    </span>
+
+                                </div>
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 82%;">
+                                    </div>
+
+                                    <span>
+                                        Jun
+                                    </span>
+
+                                </div>
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 62%;">
+                                    </div>
+
+                                    <span>
+                                        Jul
+                                    </span>
+
+                                </div>
+
+
+                                <div class="chart-bar-group">
+
+                                    <div
+                                        class="chart-bar applications-bar"
+                                        style="height: 91%;">
+                                    </div>
+
+                                    <span>
+                                        Aug
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="professor-panel quick-actions-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span>
+                                SHORTCUTS
+                            </span>
+
+                            <h2>
+                                Quick Actions
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+
+                        <button class="quick-action">
+
+                            <span class="quick-action-icon blue">
+                                +
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Create Drive
+                                </strong>
+
+                                <span>
+                                    Add a new placement drive
+                                </span>
+
+                            </div>
+
+                            <b>
+                                →
+                            </b>
+
+                        </button>
+
+
+                        <button class="quick-action">
+
+                            <span class="quick-action-icon purple">
+                                👨‍🎓
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Manage Students
+                                </strong>
+
+                                <span>
+                                    View registered students
+                                </span>
+
+                            </div>
+
+                            <b>
+                                →
+                            </b>
+
+                        </button>
+
+
+                        <button class="quick-action">
+
+                            <span class="quick-action-icon green">
+                                📊
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    View Analytics
+                                </strong>
+
+                                <span>
+                                    Placement performance
+                                </span>
+
+                            </div>
+
+                            <b>
+                                →
+                            </b>
+
+                        </button>
+
+
+                        <button class="quick-action">
+
+                            <span class="quick-action-icon orange">
+                                🧠
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Create Aptitude Test
+                                </strong>
+
+                                <span>
+                                    Add a new assessment
+                                </span>
+
+                            </div>
+
+                            <b>
+                                →
+                            </b>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="professor-footer">
+
+            <span>
+                © 2026 College Placement Portal
+            </span>
+
+            <span>
+                Professor Portal · Placement Cell
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- MOBILE OVERLAY -->
+
+<div
+    class="professor-overlay"
+    id="professorOverlay">
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+
+    /* =====================================
+       MOBILE MENU
+    ====================================== */
+
+    const professorMobileMenu =
+        document.getElementById(
+            "professorMobileMenu"
+        );
+
+
+    const professorSidebar =
+        document.getElementById(
+            "professorSidebar"
+        );
+
+
+    const professorOverlay =
+        document.getElementById(
+            "professorOverlay"
+        );
+
+
+    professorMobileMenu.addEventListener(
+        "click",
+        function () {
+
+            professorSidebar.classList.toggle(
+                "open"
+            );
+
+            professorOverlay.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+
+    professorOverlay.addEventListener(
+        "click",
+        function () {
+
+            professorSidebar.classList.remove(
+                "open"
+            );
+
+            professorOverlay.classList.remove(
+                "active"
+            );
+
+        }
+    );
+
+
+    /* =====================================
+       ACTIVITY FILTER
+    ====================================== */
+
+    const activityFilter =
+        document.getElementById(
+            "activityFilter"
+        );
+
+
+    activityFilter.addEventListener(
+        "change",
+        function () {
+
+            console.log(
+                "Selected:",
+                this.value
+            );
+
+        }
+    );
+
+
+</script>
+
+</body>
+
+</html>

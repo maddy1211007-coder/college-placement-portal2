@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="Aptitude Tests - College Placement Portal">
+
+<title>Aptitude Tests | College Placement Portal</title>
+
+
+<!-- Google Font -->
+
+<link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+<!-- Main CSS -->
+
+<link rel="stylesheet"
+    href="css/style.css">
+
+
+<!-- Dashboard CSS -->
+
+<link rel="stylesheet"
+    href="css/student-dashboard.css">
+
+
+<!-- Aptitude CSS -->
+
+<link rel="stylesheet"
+    href="css/aptitude-tests.css">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     DASHBOARD LAYOUT
+========================================== -->
+
+<div class="dashboard-layout">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <a href="index.html"
+                class="logo">
+
+                <div class="logo-icon">
+                    CP
+                </div>
+
+                <div class="logo-text">
+
+                    <span>
+                        College
+                    </span>
+
+                    Placement
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    MAIN MENU
+                </span>
+
+
+                <a href="student-dashboard.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a href="student-profile.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        👤
+                    </span>
+
+                    <span>
+                        My Profile
+                    </span>
+
+                </a>
+
+
+                <a href="placement-drives.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🏢
+                    </span>
+
+                    <span>
+                        Placement Drives
+                    </span>
+
+                </a>
+
+
+                <a href="my-applications.html"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        📋
+                    </span>
+
+                    <span>
+                        My Applications
+                    </span>
+
+                </a>
+
+
+                <a href="aptitude-tests.html"
+                    class="sidebar-link active">
+
+                    <span class="sidebar-icon">
+                        🧠
+                    </span>
+
+                    <span>
+                        Aptitude Tests
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="nav-section">
+
+                <span class="nav-section-title">
+                    ACCOUNT
+                </span>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        🔔
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </a>
+
+
+                <a href="#"
+                    class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <span class="help-icon">
+                    ?
+                </span>
+
+                <div>
+
+                    <strong>
+                        Need Help?
+                    </strong>
+
+                    <span>
+                        Contact Placement Cell
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="login.html"
+                class="logout-link">
+
+                <span>
+                    ↪
+                </span>
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search tests...">
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+
+                <button class="notification-btn">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="student-mini-profile">
+
+                    <div class="student-avatar">
+                        MS
+                    </div>
+
+                    <div class="student-mini-info">
+
+                        <strong>
+                            Student Name
+                        </strong>
+
+                        <span>
+                            CSE · Final Year
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ▾
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             CONTENT
+        ================================== -->
+
+        <div class="aptitude-content">
+
+
+            <!-- HEADER -->
+
+            <div class="aptitude-header">
+
+                <div>
+
+                    <span class="welcome-label">
+                        STUDENT PORTAL
+                    </span>
+
+                    <h1>
+                        Aptitude Tests
+                    </h1>
+
+                    <p>
+                        Prepare for and complete aptitude
+                        tests assigned by the Placement Cell.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SUMMARY
+            ================================== -->
+
+            <div class="test-summary">
+
+
+                <div class="test-summary-card">
+
+                    <div class="test-summary-icon blue">
+                        🧠
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            03
+                        </strong>
+
+                        <span>
+                            Assigned Tests
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="test-summary-card">
+
+                    <div class="test-summary-icon orange">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            02
+                        </strong>
+
+                        <span>
+                            Pending
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="test-summary-card">
+
+                    <div class="test-summary-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <span>
+                            Completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="test-summary-card">
+
+                    <div class="test-summary-icon purple">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            78%
+                        </strong>
+
+                        <span>
+                            Best Score
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 UPCOMING TESTS
+            ================================== -->
+
+            <section class="test-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>
+                            Upcoming Tests
+                        </h2>
+
+                        <p>
+                            Tests currently assigned to you.
+                        </p>
+
+                    </div>
+
+                    <span class="test-count">
+                        2 Tests
+                    </span>
+
+                </div>
+
+
+
+                <!-- TEST CARD 1 -->
+
+                <article class="test-card">
+
+
+                    <div class="test-icon-large">
+                        T
+                    </div>
+
+
+                    <div class="test-card-main">
+
+
+                        <span class="test-status upcoming">
+                            ● Upcoming
+                        </span>
+
+
+                        <h3>
+                            TCS Placement Aptitude Test
+                        </h3>
+
+
+                        <p>
+                            Tata Consultancy Services
+                        </p>
+
+
+                        <div class="test-details">
+
+                            <span>
+                                📝 30 Questions
+                            </span>
+
+                            <span>
+                                ⏱ 30 Minutes
+                            </span>
+
+                            <span>
+                                🎯 No Negative Marking
+                            </span>
+
+                        </div>
+
+
+                        <div class="test-topics">
+
+                            <span>
+                                Quantitative
+                            </span>
+
+                            <span>
+                                Logical Reasoning
+                            </span>
+
+                            <span>
+                                Verbal Ability
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="test-card-action">
+
+                        <span class="test-deadline">
+                            Deadline
+                            <strong>
+                                Sep 04, 2026
+                            </strong>
+                        </span>
+
+
+                        <button
+                            class="start-test-btn"
+                            data-test="tcs">
+
+                            Start Test →
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TEST CARD 2 -->
+
+                <article class="test-card">
+
+
+                    <div class="test-icon-large">
+                        Z
+                    </div>
+
+
+                    <div class="test-card-main">
+
+
+                        <span class="test-status upcoming">
+                            ● Upcoming
+                        </span>
+
+
+                        <h3>
+                            Zoho Technical Aptitude Test
+                        </h3>
+
+
+                        <p>
+                            Zoho Corporation
+                        </p>
+
+
+                        <div class="test-details">
+
+                            <span>
+                                📝 25 Questions
+                            </span>
+
+                            <span>
+                                ⏱ 25 Minutes
+                            </span>
+
+                            <span>
+                                🎯 No Negative Marking
+                            </span>
+
+                        </div>
+
+
+                        <div class="test-topics">
+
+                            <span>
+                                Programming
+                            </span>
+
+                            <span>
+                                Logical Reasoning
+                            </span>
+
+                            <span>
+                                Technical Basics
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="test-card-action">
+
+                        <span class="test-deadline">
+                            Deadline
+                            <strong>
+                                Sep 14, 2026
+                            </strong>
+                        </span>
+
+
+                        <button
+                            class="start-test-btn"
+                            data-test="zoho">
+
+                            Start Test →
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 COMPLETED TEST
+            ================================== -->
+
+            <section class="test-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>
+                            Completed Tests
+                        </h2>
+
+                        <p>
+                            Your previous aptitude test results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <article class="completed-test-card">
+
+
+                    <div class="completed-test-icon">
+                        A
+                    </div>
+
+
+                    <div class="completed-test-main">
+
+                        <h3>
+                            Accenture Campus Aptitude Test
+                        </h3>
+
+                        <p>
+                            Completed on Aug 25, 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="score-box">
+
+                        <span>
+                            SCORE
+                        </span>
+
+                        <strong>
+                            78%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-badge">
+                        Completed ✓
+                    </div>
+
+
+                    <button class="result-btn">
+                        View Result
+                    </button>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =================================
+                 PREPARATION
+            ================================== -->
+
+            <section class="preparation-card">
+
+
+                <div class="preparation-icon">
+                    💡
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Prepare before your test
+                    </h3>
+
+                    <p>
+                        Practice quantitative aptitude,
+                        logical reasoning, verbal ability
+                        and programming questions to improve
+                        your placement readiness.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="practice-btn">
+
+                    Practice Questions →
+
+                </button>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="dashboard-footer">
+
+            <span>
+                © 2026 College Placement Portal
+            </span>
+
+            <span>
+                Placement Cell · Student Portal
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- SIDEBAR OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay">
+</div>
+
+
+
+<!-- =========================================
+     TEST INSTRUCTIONS MODAL
+========================================== -->
+
+<div
+    class="test-modal"
+    id="testModal">
+
+
+    <div class="test-modal-box">
+
+
+        <button
+            class="test-modal-close"
+            id="testModalClose">
+
+            ×
+
+        </button>
+
+
+        <div class="test-modal-icon">
+            🧠
+        </div>
+
+
+        <span class="modal-label">
+            PLACEMENT APTITUDE TEST
+        </span>
+
+
+        <h2>
+            Before you begin
+        </h2>
+
+
+        <p class="modal-description">
+            Please read the instructions carefully
+            before starting your test.
+        </p>
+
+
+        <div class="instructions-list">
+
+            <div>
+                <span>1</span>
+                <p>
+                    The test contains multiple-choice questions.
+                </p>
+            </div>
+
+            <div>
+                <span>2</span>
+                <p>
+                    Once the timer starts, it cannot be paused.
+                </p>
+            </div>
+
+            <div>
+                <span>3</span>
+                <p>
+                    Make sure you have a stable internet connection.
+                </p>
+            </div>
+
+            <div>
+                <span>4</span>
+                <p>
+                    Submit the test before the timer reaches zero.
+                </p>
+            </div>
+
+            <div>
+                <span>5</span>
+                <p>
+                    Do not refresh or close the test window.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="test-info-row">
+
+            <div>
+
+                <span>
+                    QUESTIONS
+                </span>
+
+                <strong>
+                    30
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    DURATION
+                </span>
+
+                <strong>
+                    30 min
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    MARKING
+                </span>
+
+                <strong>
+                    +1
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="begin-test-btn"
+            id="beginTest">
+
+            Begin Test →
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================== -->
+
+<script>
+
+
+    /* =====================================
+       MOBILE SIDEBAR
+    ====================================== */
+
+    const mobileMenuBtn =
+        document.getElementById("mobileMenuBtn");
+
+    const sidebar =
+        document.getElementById("sidebar");
+
+    const sidebarOverlay =
+        document.getElementById("sidebarOverlay");
+
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.toggle("open");
+
+            sidebarOverlay.classList.toggle("active");
+
+        }
+    );
+
+
+    sidebarOverlay.addEventListener(
+        "click",
+        function () {
+
+            sidebar.classList.remove("open");
+
+            sidebarOverlay.classList.remove("active");
+
+        }
+    );
+
+
+
+    /* =====================================
+       TEST MODAL
+    ====================================== */
+
+    const testModal =
+        document.getElementById("testModal");
+
+    const testModalClose =
+        document.getElementById("testModalClose");
+
+    const beginTest =
+        document.getElementById("beginTest");
+
+    const startTestButtons =
+        document.querySelectorAll(".start-test-btn");
+
+
+    startTestButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    testModal.classList.add("active");
+
+                }
+            );
+
+        }
+    );
+
+
+    function closeTestModal() {
+
+        testModal.classList.remove("active");
+
+    }
+
+
+    testModalClose.addEventListener(
+        "click",
+        closeTestModal
+    );
+
+
+    testModal.addEventListener(
+        "click",
+        function (event) {
+
+            if (event.target === testModal) {
+
+                closeTestModal();
+
+            }
+
+        }
+    );
+
+
+    /* =====================================
+       BEGIN TEST
+    ====================================== */
+
+    beginTest.addEventListener(
+        "click",
+        function () {
+
+            window.location.href =
+               "aptitude-test.html";
+
+        }
+    );
+
+
+    /* =====================================
+       VIEW RESULT
+    ====================================== */
+
+    const resultBtn =
+        document.querySelector(".result-btn");
+
+
+    resultBtn.addEventListener(
+        "click",
+        function () {
+
+            alert(
+                "Result details will be available soon."
+            );
+
+        }
+    );
+
+
+</script>
+
+</body>
+
+</html>

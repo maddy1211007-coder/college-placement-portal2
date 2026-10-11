@@ -1,0 +1,591 @@
+/* =========================================
+   PROFESSOR PLACEMENT DRIVES
+========================================= */
+
+.placement-drives-content {
+    max-width: 1150px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.drives-page-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.drives-label {
+    display: block;
+    color: #176B9D;
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+
+.drives-page-header h1 {
+    color: #193C63;
+    font-size: 21px;
+    margin-top: 4px;
+}
+
+
+.drives-page-header p {
+    color: #7D8999;
+    font-size: 8px;
+    margin-top: 4px;
+}
+
+
+.create-drive-main-btn {
+    height: 36px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 7px;
+    background: #123B6D;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.create-drive-main-btn span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.create-drive-main-btn:hover {
+    background: #0D315A;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.drive-statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+    margin-bottom: 14px;
+}
+
+
+.drive-stat-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E9F1;
+    border-radius: 9px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.drive-stat-icon {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+.drive-stat-icon.blue {
+    background: #EAF6FE;
+}
+
+
+.drive-stat-icon.green {
+    background: #E8F7EF;
+}
+
+
+.drive-stat-icon.orange {
+    background: #FFF3E5;
+}
+
+
+.drive-stat-icon.purple {
+    background: #F0EDFE;
+}
+
+
+.drive-stat-card span {
+    display: block;
+    color: #9AA5B4;
+    font-size: 5px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+
+.drive-stat-card strong {
+    display: block;
+    color: #193C63;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+
+.drive-stat-card small {
+    display: block;
+    color: #A0AAB7;
+    font-size: 6px;
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   FILTER BAR
+========================================= */
+
+.drive-filter-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E9F1;
+    border-radius: 9px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 13px;
+}
+
+
+.drive-search {
+    flex: 1;
+    height: 34px;
+    min-width: 180px;
+    border: 1px solid #DCE5ED;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 10px;
+}
+
+
+.drive-search > span {
+    color: #9AA5B4;
+    font-size: 13px;
+}
+
+
+.drive-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #43566B;
+    font-family: inherit;
+    font-size: 8px;
+}
+
+
+.drive-search input::placeholder {
+    color: #A7B1BD;
+}
+
+
+.drive-filter-card select {
+    height: 34px;
+    border: 1px solid #DCE5ED;
+    border-radius: 7px;
+    background: #FFFFFF;
+    color: #68798A;
+    padding: 0 9px;
+    font-family: inherit;
+    font-size: 7px;
+    outline: none;
+}
+
+
+.clear-filter-btn {
+    height: 34px;
+    padding: 0 11px;
+    border: none;
+    border-radius: 7px;
+    background: #F3F6F8;
+    color: #7C8998;
+    font-family: inherit;
+    font-size: 7px;
+    cursor: pointer;
+}
+
+
+.clear-filter-btn:hover {
+    background: #EAF6FE;
+    color: #176B9D;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.drives-table-card {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #E2E9F1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.drives-table-header {
+    min-height: 65px;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDF1F5;
+}
+
+
+.drives-table-header > div > span {
+    color: #A0AAB7;
+    font-size: 5px;
+    letter-spacing: .7px;
+}
+
+
+.drives-table-header h2 {
+    color: #35445A;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+
+.drive-result-count {
+    color: #176B9D;
+    background: #EAF6FE;
+    padding: 5px 8px;
+    border-radius: 9px;
+    font-size: 6px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.drives-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.drives-table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+}
+
+
+.drives-table th {
+    height: 38px;
+    background: #F8FAFC;
+    color: #9AA5B4;
+    font-size: 5px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-align: left;
+    padding: 0 11px;
+    white-space: nowrap;
+}
+
+
+.drives-table td {
+    height: 61px;
+    border-top: 1px solid #EDF1F5;
+    color: #718092;
+    font-size: 7px;
+    padding: 0 11px;
+    white-space: nowrap;
+}
+
+
+.drives-table tbody tr:hover {
+    background: #FBFDFF;
+}
+
+
+/* =========================================
+   COMPANY
+========================================= */
+
+.company-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.company-logo {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+.company-logo.tcs {
+    background: #123B6D;
+}
+
+
+.company-logo.accenture {
+    background: #5B4B8A;
+}
+
+
+.company-logo.wipro {
+    background: #347B72;
+}
+
+
+.company-logo.zoho {
+    background: #A35A42;
+}
+
+
+.company-logo.infosys {
+    background: #2673A8;
+}
+
+
+.company-logo.cognizant {
+    background: #315A78;
+}
+
+
+.company-cell strong {
+    display: block;
+    color: #42556A;
+    font-size: 8px;
+}
+
+
+.company-cell span {
+    display: block;
+    color: #A0AAB7;
+    font-size: 5px;
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.table-role {
+    color: #4C5E72;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ELIGIBILITY
+========================================= */
+
+.eligibility-badge {
+    display: inline-block;
+    padding: 4px 6px;
+    background: #F3F7FA;
+    color: #68798A;
+    border-radius: 6px;
+    font-size: 5px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   APPLICATIONS
+========================================= */
+
+.application-number {
+    color: #176B9D;
+    font-size: 8px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.table-status {
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 9px;
+    font-size: 5px;
+    font-weight: 600;
+}
+
+
+.table-status.open {
+    background: #E8F7EF;
+    color: #24815A;
+}
+
+
+.table-status.upcoming {
+    background: #EAF6FE;
+    color: #176B9D;
+}
+
+
+.table-status.closed {
+    background: #F2F4F6;
+    color: #7B8795;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.table-action {
+    height: 27px;
+    padding: 0 9px;
+    border: 1px solid #D8E2EA;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #176B9D;
+    font-family: inherit;
+    font-size: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.table-action:hover {
+    background: #EAF6FE;
+    border-color: #B9DFF1;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.drives-empty {
+    display: none;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+
+.drives-empty.show {
+    display: block;
+}
+
+
+.drives-empty > div {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 50%;
+    background: #F1F6F9;
+    color: #8A98A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+.drives-empty h3 {
+    color: #4B5C70;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+.drives-empty p {
+    color: #A0AAB7;
+    font-size: 7px;
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+    .drive-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .drives-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+
+    .create-drive-main-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .drive-filter-card {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+
+    .drive-search {
+        width: 100%;
+    }
+
+
+    .drive-filter-card select,
+    .clear-filter-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .drive-statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .drives-table-header {
+        padding: 12px;
+    }
+
+}

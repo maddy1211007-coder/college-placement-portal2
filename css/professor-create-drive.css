@@ -1,0 +1,389 @@
+/* =========================================
+   CREATE PLACEMENT DRIVE
+========================================= */
+
+.create-drive-content {
+    max-width: 1050px;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-to-drives {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #176B9D;
+    font-size: 7px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+
+.back-to-drives:hover {
+    color: #123B6D;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.create-drive-header {
+    margin-bottom: 20px;
+}
+
+
+.create-drive-header > div > span {
+    color: #176B9D;
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+
+.create-drive-header h1 {
+    color: #193C63;
+    font-size: 21px;
+    margin-top: 4px;
+}
+
+
+.create-drive-header p {
+    color: #7D8999;
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.create-drive-form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+.form-section {
+    background: #FFFFFF;
+    border: 1px solid #E2E9F1;
+    border-radius: 10px;
+    padding: 19px;
+}
+
+
+.form-section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #EDF1F5;
+}
+
+
+.form-step {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #EAF6FE;
+    color: #176B9D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    font-weight: 800;
+}
+
+
+.form-section-header span {
+    display: block;
+    color: #9AA5B4;
+    font-size: 5px;
+    font-weight: 700;
+    letter-spacing: .7px;
+}
+
+
+.form-section-header h2 {
+    color: #35445A;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 16px;
+}
+
+
+.form-field {
+    min-width: 0;
+}
+
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+
+.form-field label {
+    display: block;
+    color: #526477;
+    font-size: 7px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.form-field label b {
+    color: #D75A5A;
+}
+
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #DCE5ED;
+    border-radius: 7px;
+    background: #FFFFFF;
+    color: #43566B;
+    font-family: inherit;
+    font-size: 8px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+
+.form-field input,
+.form-field select {
+    height: 37px;
+    padding: 0 10px;
+}
+
+
+.form-field textarea {
+    min-height: 85px;
+    padding: 10px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #A8B2BE;
+}
+
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #7CC7EA;
+    box-shadow: 0 0 0 3px #EAF6FE;
+}
+
+
+.form-field small {
+    display: block;
+    color: #9AA5B4;
+    font-size: 6px;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   DEPARTMENT OPTIONS
+========================================= */
+
+.department-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+.check-option {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.check-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.check-option span {
+    min-width: 45px;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #DCE5ED;
+    border-radius: 7px;
+    background: #FFFFFF;
+    color: #68798A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+
+.check-option:hover span {
+    border-color: #9BD4ED;
+    background: #F7FCFF;
+}
+
+
+.check-option input:checked + span {
+    border-color: #6FC1E6;
+    background: #EAF6FE;
+    color: #176B9D;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    background: #FFFFFF;
+    border: 1px solid #E2E9F1;
+    border-radius: 10px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+
+.cancel-drive-btn,
+.save-draft-btn,
+.publish-drive-btn {
+    height: 36px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cancel-drive-btn {
+    padding: 0 13px;
+    color: #7D8999;
+    background: #F3F6F8;
+}
+
+
+.cancel-drive-btn:hover {
+    background: #EAEFF3;
+}
+
+
+.save-draft-btn {
+    padding: 0 13px;
+    border: 1px solid #D5E0E8;
+    background: #FFFFFF;
+    color: #5E7083;
+}
+
+
+.save-draft-btn:hover {
+    background: #F6F9FB;
+}
+
+
+.publish-drive-btn {
+    padding: 0 15px;
+    border: none;
+    background: #123B6D;
+    color: #FFFFFF;
+    gap: 8px;
+}
+
+
+.publish-drive-btn span {
+    font-size: 11px;
+}
+
+
+.publish-drive-btn:hover {
+    background: #0D315A;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-field.full-width {
+        grid-column: auto;
+    }
+
+
+    .form-section {
+        padding: 14px;
+    }
+
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+
+    .cancel-drive-btn,
+    .save-draft-btn,
+    .publish-drive-btn {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .create-drive-header h1 {
+        font-size: 18px;
+    }
+
+
+    .department-options {
+        gap: 6px;
+    }
+
+
+    .check-option span {
+        min-width: 40px;
+    }
+
+}
